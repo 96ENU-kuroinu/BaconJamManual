@@ -5,19 +5,21 @@
 %目次に節まで表示
 \setcounter{tocdepth}{3}
 
-\usepackage{amssymb}
-\usepackage{okumacro}
-\usepackage{amsmath,amssymb}
-\usepackage{bm}
-\usepackage[dvipdfm]{graphicx}
 \usepackage[dvipdfm]{color}
-\usepackage{ascmac}
+\usepackage[dvipdfm]{graphicx}
 \usepackage[dvipdfmx]{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{amssymb}
+\usepackage{ascmac}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage{fancybox}
+\usepackage{ltablex}
+\usepackage{makeidx}
+\usepackage{okumacro}
 \usepackage{pdfpages}
 \usepackage{pxjahyper}
-\usepackage{makeidx}
-\usepackage{fancybox}
-\usepackage{caption}
 \usepackage{xhfill}
 
 \hypersetup{% hyperrefオプションリスト
@@ -45,6 +47,9 @@ setpagesize=false,
 
 \clearpage
 \input{./SpotifySetting/spotifySetting}
+
+\newpage
+\input{./SupportedDevices/supporteddevices}
 
 \newpage
 \input{./ReleaseNote/releasenote}
