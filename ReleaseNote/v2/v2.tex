@@ -1,0 +1,32 @@
+\subsection*{バージョンコード3(1.1.0)}
+\new
+\begin{itemize}
+    \item \nowplaying の公開範囲を以下から選択できる機能を追加しました。
+        \begin{enumerate}
+            \item パブリック(全てのユーザーに公開)
+            \item ホーム(ホームタイムラインのみに公開)
+            \item フォロワー(自分のフォロワーのみに公開)
+            \item チャンネル\footnote{チャンネルIDの設定が必要です}
+        \end{enumerate}
+    \item Spotifyとの連携機能(プレビュー版)を追加しました。
+    \item 設定画面に\ttbox{設定をリセットする}ボタンを追加しました。
+\end{itemize}
+
+\change
+\begin{itemize}
+    \item \nowplaying の際に以下の順にアーティスト名を取得し、最初に見つかったものを表示するように変更しました。
+        \begin{enumerate}
+            \item アルバムアーティスト名
+            \item トラックアーティスト名
+            \item 著者名
+            \item 作者名
+        \end{enumerate}
+    \item \mi のアクセストークンが空欄の場合、\ttbox{テスト接続}ボタンを押下できないように変更しました。
+    \item 設定画面の各種項目を折りたためるようにUIを変更しました。
+\end{itemize}
+
+\fix
+\begin{itemize}
+    \item ランキング画面の不要な\ttbox{TEST}ボタンを削除しました。
+    \item 初回インストール時に投稿パターンの初期値が設定されておらず、\nowplaying できない不具合を修正しました。
+\end{itemize}

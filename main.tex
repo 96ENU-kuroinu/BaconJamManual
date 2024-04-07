@@ -1,0 +1,68 @@
+\documentclass[11pt,a4paper,dvipdfmx]{jsarticle}
+
+\input{constant}
+
+%目次に節まで表示
+\setcounter{tocdepth}{3}
+
+\usepackage{amssymb}
+\usepackage{okumacro}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage[dvipdfm]{graphicx}
+\usepackage[dvipdfm]{color}
+\usepackage{ascmac}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pdfpages}
+\usepackage{pxjahyper}
+\usepackage{makeidx}
+\usepackage{fancybox}
+\usepackage{caption}
+\usepackage{xhfill}
+
+\hypersetup{% hyperrefオプションリスト
+setpagesize=false,
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ colorlinks=true,%
+ linkcolor=blue,
+ citecolor=red,
+}
+
+\makeindex
+
+\title{\bj (\currentVersion) 操作説明書 }
+\author{くろいぬ/Falhong-Cha}
+\date{最終更新日：\today}
+
+\begin{document}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+
+\begin{titlepage}
+	\maketitle\thispagestyle{empty}
+\end{titlepage}
+\tableofcontents
+
+\clearpage
+\input{./SpotifySetting/spotifySetting}
+
+\newpage
+\input{./ReleaseNote/releasenote}
+
+\newpage
+\section{各種連絡先}
+\label{contact}
+    \begin{itemize}
+        \item[Misskey.io] \href{https://misskey.io/@96ENU}{\texttt{@96ENU}}
+        \item[Twitter] \href{https://twitter.com/96ENU}{\texttt{@96ENU}}
+        \item[Mail] \verb|96enu.illustration@gmail.com|
+        \item[Discord]
+            \begin{itemize}
+                \item 個人：\verb|96ENU|
+                \item \bj 用サーバ：\href{https://discord.gg/C3veaKqp}{Join to Server}
+            \end{itemize}
+    \end{itemize}
+
+\newpage
+\printindex
+\end{document}
