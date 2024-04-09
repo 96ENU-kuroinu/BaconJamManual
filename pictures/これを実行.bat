@@ -1,4 +1,5 @@
 pushd %0\..
+del extract.bat
 dir *.png /b > files.txt
 for /f "delims=" %%a in (files.txt) do (
 (echo extractbb %%a) >> extract.bat
