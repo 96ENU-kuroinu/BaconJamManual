@@ -1,3 +1,9 @@
+extractbb guide1.png
+extractbb guide2.png
+extractbb guide3.png
+extractbb guide4.png
+extractbb guide5.png
+extractbb guide6.png
 extractbb misskey1.png
 extractbb misskey10.png
 extractbb misskey2.png
