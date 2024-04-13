@@ -1,3 +1,6 @@
+extractbb battery1.png
+extractbb battery2.png
+extractbb battery3.png
 extractbb guide1.png
 extractbb guide2.png
 extractbb guide3.png

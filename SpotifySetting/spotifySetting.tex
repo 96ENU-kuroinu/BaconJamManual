@@ -221,7 +221,7 @@
     \subsection{Spotify連携時の挙動について}
     \label{sec:spotify7}
     \begin{itemize}
-        \item 約1分に一度、Spotifyで再生中の曲を確認し\mi への\nowplaying を行います。
+        \item 約1分に1度、Spotifyで再生中の曲を確認し\mi への\nowplaying を行います。
         \item 以下のいずれかに該当する場合、\nowplaying を行いません。
         \begin{itemize}
             \item 再生中の曲がない
@@ -230,5 +230,6 @@
             \item 前回の\nowplaying と曲名・アーティスト名が変化していない
             \item スマートフォンがネットワークに接続されていない
             \item スマートフォンがロック状態になっている\footnote{ディスプレイを常時表示設定にすることで、解決する場合があります}
+            \item \bj のバッテリー最適化が有効になっている→\ref{sec:battery1}の手順を参考に、無効に切り替えてください\footnote{機種、android OSのバージョンによって手順が異なる場合があります}。
         \end{itemize}
     \end{itemize}
