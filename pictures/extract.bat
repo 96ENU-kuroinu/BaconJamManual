@@ -17,6 +17,15 @@ extractbb misskey6.png
 extractbb misskey7.png
 extractbb misskey8.png
 extractbb misskey9.png
+extractbb playlist1.png
+extractbb playlist2.png
+extractbb playlist3.png
+extractbb playlist4.png
+extractbb playlist5.png
+extractbb playlist6.png
+extractbb playlist7.png
+extractbb playlist8.png
+extractbb playlist9.png
 extractbb spotify1.png
 extractbb spotify10.png
 extractbb spotify11.png
