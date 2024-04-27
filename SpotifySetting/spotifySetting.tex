@@ -161,7 +161,7 @@
     \subsection{\bj 側の設定}
     \label{sec:spotify6}
         \begin{enumerate}
-            \item 設定画面の\ttbox{Spotify接続設定(プレビュー版)}を押下して、設定項目を展開してください。
+            \item 設定画面の\ttbox{Spotify接続設定}を押下して、設定項目を展開してください。
                 \begin{figure}[htbp]
                     \begin{minipage}[b]{0.45\linewidth}
                         \centering
@@ -183,7 +183,7 @@
                 \end{figure}
 
             \newpage
-            \item \ref{sec:spotify5} \bracketref{item:spotify12}で控えた\clientId ,\clientSecret を\ttbox{Spotify接続設定(プレビュー版)}に入力してください。
+            \item \ref{sec:spotify5} \bracketref{item:spotify12}で控えた\clientId ,\clientSecret を\ttbox{Spotify接続設定}に入力してください。
                 \begin{figure}[htbp]
                     \centering
                     \fbox{
@@ -194,7 +194,7 @@
                 \end{figure}
 
             \newpage
-            \item \ttbox{Spotify接続設定(プレビュー版)}の\ttbox{接続テスト}ボタンが押下できるようになるので、押下して認証ページへアクセスしてください。
+            \item \ttbox{Spotify接続設定}の\ttbox{認証する}ボタンが押下できるようになるので、押下して認証ページへアクセスしてください。
             \item \imageref{img:spotify13}のような認証ページが表示されるので、\ttbox{同意する}を押下してください。
                 \begin{figure}[htbp]
                     \centering
@@ -206,14 +206,36 @@
                 \end{figure}
 
             \newpage
-            \item 認証ページが閉じ、\imageref{img:spotify14}のような成功ダイアログが表示されたらSpotify側の準備は完了です\footnote{ダイアログ内のユーザー名がご自身のアカウントと一致していることを確認してください}。
+            \item \imageref{img:spotify14}のような接続エラーページに切り替わるので、このページのURLを控えてください。
                 \begin{figure}[htbp]
                     \centering
                     \fbox{
                         \includegraphics[width=5cm]{./pictures/Spotify14.png}
                     }
-                    \caption{認証ページ}
+                    \caption{接続エラーページ}
                     \label{img:spotify14}
+                \end{figure}
+
+            \newpage
+            \item \ttbox{Spotify接続設定}の\ttbox{してきたよ}ボタンを押下してダイアログを表示し、控えたURLを貼り付けて\ttbox{OK}ボタンを押下してください。
+                \begin{figure}[htbp]
+                    \centering
+                    \fbox{
+                        \includegraphics[width=5cm]{./pictures/Spotify15.png}
+                    }
+                    \caption{認証ページ}
+                    \label{img:spotify15}
+                \end{figure}
+
+            \newpage
+            \item ダイアログが閉じ、\imageref{img:spotify16}のような成功ダイアログが表示されたらSpotify側の準備は完了です\footnote{ダイアログ内のユーザー名がご自身のアカウントと一致していることを確認してください}。
+                \begin{figure}[htbp]
+                    \centering
+                    \fbox{
+                        \includegraphics[width=5cm]{./pictures/Spotify16.png}
+                    }
+                    \caption{認証ページ}
+                    \label{img:spotify16}
                 \end{figure}
         \end{enumerate}
 

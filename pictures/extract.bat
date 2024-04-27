@@ -32,6 +32,8 @@ extractbb spotify11.png
 extractbb spotify12.png
 extractbb spotify13.png
 extractbb spotify14.png
+extractbb spotify15.png
+extractbb spotify16.png
 extractbb spotify2.png
 extractbb spotify3.png
 extractbb spotify4.png
