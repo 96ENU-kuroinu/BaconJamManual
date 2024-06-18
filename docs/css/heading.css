@@ -9,3 +9,10 @@ h2 {
 h3 {
     border-bottom: 5px #95cf4a;
 }
+
+.img_h1,
+.img_h2,
+.img_h3 {
+    vertical-align: middle;
+    /* 画像を文字と垂直方向で中央揃えにする */
+}

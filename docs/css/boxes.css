@@ -1,0 +1,71 @@
+.box-caution {
+    display: flex;
+    grid-gap: 0 .7em;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #ffebee;
+    color: #333333;
+}
+
+.box-caution::before {
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12.8659 3.00017L22.3922 19.5002C22.6684 19.9785 22.5045 20.5901 22.0262 20.8662C21.8742 20.954 21.7017 21.0002 21.5262 21.0002H2.47363C1.92135 21.0002 1.47363 20.5525 1.47363 20.0002C1.47363 19.8246 1.51984 19.6522 1.60761 19.5002L11.1339 3.00017C11.41 2.52187 12.0216 2.358 12.4999 2.63414C12.6519 2.72191 12.7782 2.84815 12.8659 3.00017ZM10.9999 16.0002V18.0002H12.9999V16.0002H10.9999ZM10.9999 9.00017V14.0002H12.9999V9.00017H10.9999Z' fill='%23f06060'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.box-caution p {
+    margin: 0;
+    padding: 0 0 0 .7em;
+    border-left: 1px solid #f06060;
+}
+
+.box-check {
+    display: flex;
+    align-items: center;
+    grid-gap: 0 .7em;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #ecffe9;
+    color: #333333;
+}
+
+.box-check::before {
+    width: 16px;
+    height: 8px;
+    border-bottom: 3px solid #86d67c;
+    border-left: 3px solid #86d67c;
+    transform: rotate(-45deg) translate(2.5px, -2.5px);
+    content: '';
+}
+
+.box-check p {
+    margin: 0;
+    padding: 0 0 0 .7em;
+    border-left: 1px solid #86d67c;
+}
+
+.box-memo {
+    display: flex;
+    grid-gap: 0 .7em;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #fff9e5;
+    color: #333333;
+}
+
+.box-memo::before {
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12.8995 6.85453L17.1421 11.0972L7.24264 20.9967H3V16.754L12.8995 6.85453ZM14.3137 5.44032L16.435 3.319C16.8256 2.92848 17.4587 2.92848 17.8492 3.319L20.6777 6.14743C21.0682 6.53795 21.0682 7.17112 20.6777 7.56164L18.5563 9.68296L14.3137 5.44032Z' fill='%23ffb36b'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.box-memo p {
+    margin: 0;
+    padding: 0 0 0 .7em;
+    border-left: 1px solid #ffb36b;
+}
