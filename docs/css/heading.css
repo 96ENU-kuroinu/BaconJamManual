@@ -1,5 +1,7 @@
 h1 {
     background-color: #95cf4a;
+    padding: 10px;
+border-radius: 20px;
 }
 
 h2 {
@@ -7,7 +9,7 @@ h2 {
 }
 
 h3 {
-    border-bottom: 5px #95cf4a;
+    border-bottom: dotted 5px #95cf4a;
 }
 
 .img_h1,
