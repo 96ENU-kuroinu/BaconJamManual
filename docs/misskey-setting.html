@@ -14,54 +14,87 @@
 </head>
 
 <body>
+    <div class="contentsbody">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
+                    <span itemprop="name">TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
 
-    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
-                <span itemprop="name">TOP</span>
-            </a>
-            <meta itemprop="position" content="1" />
-        </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./misskey-setting.html">
+                    <span itemprop="name">Misskeyとの連携</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
 
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="./misskey-setting.html">
-                <span itemprop="name">Misskeyとの連携</span>
-            </a>
-            <meta itemprop="position" content="2" />
-        </li>
-    </ol>
+        <h1><img src="./images/misskey.svg" alt="Misskey" class="img_h1" id="img_h1">との連携</h1>
 
-    <h1><img src="./images/misskey.svg" alt="Misskey" class="img_h1" id="img_h1">との連携</h1>
-    <h2>連携(アクセストークンの発行)</h2>
-    <div class="box-caution">
-        <p>
-            「なうぷれ投稿」したいMisskeyサーバーで二要素認証の設定が必要な場合は、こちらを参考にあらかじめ設定を行ってください。
-        </p>
-    </div>
-    <ol>
-        <li>設定画面のMisskey接続設定を押下して、設定項目を展開してください。</li>
-        <div style="text-align: center;">
-            <a href="./images/misskey1.png" data-lightbox="misskey-group1"><img src="./images/misskey1.png" alt=""
-                    width="200"></a>
-            <a href="./images/misskey2.png" data-lightbox="misskey-group1"><img src="./images/misskey2.png" alt=""
-                    width="200"></a>
-            <p>Misskey接続設定<span id="version"></span></p>
+        <div id="toc">
+            <ul id="toc-list"></ul>
         </div>
-        <li>認証するボタンを押下してアプリへのアクセス許可ページにアクセスしてください。</li>
-        <li>「なうぷれ投稿」したいMisskeyアカウントのユーザー名、パスワードを入力してログインを押下してください。</li>
-        <li>以下の図のように二要素認証の入力を要求された場合は、こちらの手順で作成した認証コードを入力してログインを押下してください。</li>
-        <li>以下の図のようなアクセス許可ページが表示されるので、許可を押下してください。</li>
-        <li>以下の図のような認証完了ページが表示されたら、BaconJamに戻ってください。</li>
-        <li>Misskey接続設定のしてきたよを押下すると、連携に成功している場合以下の図のようなダイアログが表示されます。</li>
-        <div class="box-check">
+
+        <h2>連携(アクセストークンの発行)</h2>
+        <div class="box-caution">
             <p>
-                ご自身のアカウントが正しく連携されていることを確認してください。
+                「なうぷれ投稿」したいMisskeyサーバーで二要素認証の設定が必要な場合は、<a
+                    href="https://support.misskey.io/hc/ja/articles/9354169842191-%E4%BA%8C%E8%A6%81%E7%B4%A0%E8%AA%8D%E8%A8%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">こちら</a>を参考にあらかじめ設定を行ってください。
             </p>
         </div>
-    </ol>
-    <h2>発行したアクセストークンの確認・削除</h2>
+        <ol>
+            <li>設定画面のMisskey接続設定を押下して、設定項目を展開してください。</li>
+            <div style="text-align: center;">
+                <a href="./images/misskey1.png" data-lightbox="misskey-group"><img src="./images/misskey1.png" alt=""
+                        width="200"></a>
+                <a href="./images/misskey2.png" data-lightbox="misskey-group"><img src="./images/misskey2.png" alt=""
+                        width="200"></a>
+                <p>Misskey接続設定<span id="version"></span></p>
+            </div>
+            <li>認証するボタンを押下してアプリへのアクセス許可ページにアクセスしてください。</li>
+            <li>「なうぷれ投稿」したいMisskeyアカウントのユーザー名、パスワードを入力してログインを押下してください。</li>
+            <div style="text-align: center;">
+                <a href="./images/misskey3.png" data-lightbox="misskey-group"><img src="./images/misskey3.png" alt=""
+                        width="200"></a>
+            </div>
+            <li>以下の図のように二要素認証の入力を要求された場合は、こちらの手順で作成した認証コードを入力してログインを押下してください。</li>
+            <div style="text-align: center;">
+                <a href="./images/misskey4.png" data-lightbox="misskey-group"><img src="./images/misskey4.png" alt=""
+                        width="200"></a>
+            </div>
+            <li>以下の図のようなアクセス許可ページが表示されるので、許可を押下してください。</li>
+            <div style="text-align: center;">
+                <a href="./images/misskey5.png" data-lightbox="misskey-group"><img src="./images/misskey5.png" alt=""
+                        width="200"></a>
+            </div>
+            <li>以下の図のような認証完了ページが表示されたら、BaconJamに戻ってください。</li>
+            <div style="text-align: center;">
+                <a href="./images/misskey6.png" data-lightbox="misskey-group"><img src="./images/misskey6.png" alt=""
+                        width="200"></a>
+            </div>
+            <li>Misskey接続設定のしてきたよを押下すると、連携に成功している場合以下の図のようなダイアログが表示されます。</li>
+            <div style="text-align: center;">
+                <a href="./images/misskey7.png" data-lightbox="misskey-group"><img src="./images/misskey7.png" alt=""
+                        width="200"></a>
+            </div>
+            <div class="box-check">
+                <p>
+                    ご自身のアカウントが正しく連携されていることを確認してください。
+                </p>
+            </div>
+        </ol>
+        <h2>発行したアクセストークンの確認・削除</h2>
+        <ol>
+            <li>連携先のMisskeyサーバーで設定→APIを押下してください。</li>
+            <li>アクセストークンの管理を押下してください。</li>
+            <li>アクセストークン一覧に、「BaconJam」という名前のものが発行されています。不要になった場合は、ゴミ箱アイコンを押下してアクセストークンを削除してください。</li>
+        </ol>
+    </div>
     <script src="./js/imgAutoResize.js"></script>
     <script src="./js/load-version.js"></script>
+    <script src="./js/generate-toc.js"></script>
 </body>
 
 </html>

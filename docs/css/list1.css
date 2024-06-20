@@ -24,7 +24,13 @@
 
  .text-left-flex a {
      text-decoration: none;
+     transition: all 0.5s;
  }
+
+ .text-left-flex a:hover {
+     background-color: lightgreen;
+ }
+
 
  ul {
      list-style: none;
