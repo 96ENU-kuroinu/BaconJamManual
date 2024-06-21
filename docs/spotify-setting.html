@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="contentsbody">
+    <header style="background-color: #95cf4a;padding: 10px;">
         <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
@@ -30,7 +30,9 @@
                 <meta itemprop="position" content="2" />
             </li>
         </ol>
+    </header>
 
+    <div class="contentsbody">
         <h1><img src="./images/Spotify_Full_Logo_RGB_Black.png" alt="Spotify" class="img_h1" id="img_h1">との連携</h1>
 
         <div id="toc">
@@ -39,8 +41,83 @@
 
         <h2>Spotify側の設定</h2>
         <h3>Spotify for Developersの認証</h3>
+        <div class="box-check">
+            <p>
+                過去に認証を行ったことがない場合のみ、この手順を行ってください。
+            </p>
+        </div>
+        <ol>
+            <li><a href="https://developer.spotify.com/">Spotify for Developers</a>にアクセスし、ご利用のSpotifyアカウントでログインしてください。
+            </li>
+            <li>アカウント名を押下してメニューを表示し、<span class="button-like-text">Dashboard</span>を押下して<a
+                    href="https://developer.spotify.com/dashboard">Dashboard</a>へ移動してください。</li>
+            <li>
+                Dashboardの
+                <blockquote>
+                    <p>
+                        You need to verify your email address (アカウントに登録されているメール
+                        アドレス) before you can create an app</p>
+                </blockquote>
+                と表示されている部分の<span class="button-like-text">Update email address</span>を押下してください。
+            </li>
+            <li>押下後、アカウントに登録されているメールアドレスに<code>no-reply@spotify.com</code>から以下の図のようなセキュリティ確認のメールが送信されるので、<span
+                    class="button-like-text">メールアドレスを確認する</span>を押下してください。</li>
+            <li>ブラウザ上で以下の図のようなページが表示されたら、<a href="https://developer.spotify.com/dashboard">Dashboard</a>に戻ってください。</li>
+            <li>Dashboardで、認証前は押下できなかった<span class="button-like-text">Create app</span>が押下できるようになっていれば、認証完了です。</li>
+        </ol>
         <h3>SpotifyとBaconJam接続用appの作成</h3>
+        <ol>
+            <li><a href="https://developer.spotify.com/dashboard">Dashboard</a>の<span class="button-like-text">Create
+                    app</span>を押下してください。
+            </li>
+            <li>app作成ページが表示されるので、以下を参考に値を設定してください。
+                <ul>
+                    <li>App name…何らかの値を設定してください。</li>
+                    <div class="box-memo">
+                        <p>
+                            BaconJam用のappであることが分かるような名前の設定を推奨します。
+                        </p>
+                    </div>
+                    <li>App description…何らかの値を設定してください。</li>
+                    <li>Website…空欄で構いません。</li>
+                    <li>Redirect URIs…必ず<code>http://localhost</code>という値を設定してください。</li>
+                    <li>Bundle IDs…空欄で構いません。</li>
+                    <li>Android packages…空欄で構いません。</li>
+                    <li>APIs used…以下に✅を入れてください。
+                        <ul>
+                            <li>Android</li>
+                            <li>Web API</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <blockquote>
+                    <p>I understand and agree with Spotify's Developer Terms of Service and Design Guidelines
+                    </p>
+                </blockquote>
+                に✅を入れ、<span class="button-like-text">save</span>を押下してください。
+            </li>
+            <li>以下の図のようなapp Homeページが表示されたら、appの作成は完了です。</li>
+        </ol>
         <h3>接続に必要な情報の取得</h3>
+        <ol>
+            <li>作成したappのHomeページにアクセスしてください。</li>
+            <li><span class="button-like-text">Settings</span>を押下してBasic Informationページに移動してください。</li>
+            <li>ページ上部の<code>ClientID</code>が表示されている枠の<span class="button-like-text">View client
+                    secret</span>を押下して、<code>ClientSecret</code>を表示してください。</li>
+            <li>以下の項目を控えてください。
+                <ul>
+                    <li>ClientID</li>
+                    <li>ClientSecret</li>
+                </ul>
+            </li>
+            <div class="box-caution">
+                <p>
+                    控えた値は他人に知られないように管理してください。アカウントへの不正アクセス・乗っ取り等が発生する危険があります。
+                </p>
+            </div>
+        </ol>
         <h2>BaconJam側の設定</h2>
         <h2>Spotify連携時の挙動について</h2>
     </div>
