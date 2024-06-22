@@ -78,6 +78,8 @@
     border-radius: 5px;
     padding: 3px;
     font-weight: bold;
+    display: inline-block;
+    margin: 5px;
 }
 
 blockquote {
