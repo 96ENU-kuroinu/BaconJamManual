@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTubeとの連携</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
+                    <span itemprop="name">TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./youtube-setting.html">
+                    <span itemprop="name">YouTubeとの連携</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </header>
+
+    <div class="contentsbody">
+        <h1><img src="./images/yt_logo_rgb_light.png" alt="Spotify" class="img_h1" id="img_h1">との連携</h1>
+
+        <div id="toc">
+            <ul id="toc-list"></ul>
+        </div>
+
+        YouTubeとの接続には、以下の2つが必要です。
+        <ol>
+            <li>last.fmというサービス</li>
+            <li>last.fmへYouTubeの再生履歴を反映するための「Scrobble」という機能を持つアプリ</li>
+        </ol>
+        <div style="text-align: center;">
+            <a href="./images/lastfm1.png" data-lightbox="misskey-group"><img src="./images/lastfm1.png" alt=""
+                    width="300"></a>
+        </div>
+        <h2>last.fm側の設定</h2>
+        <ol>
+            <li>アカウントをお持ちでない場合は、<a href="https://www.last.fm/">last.fm</a>にアクセスし、アカウントを作成してください。</li>
+            <li><a href="https://www.last.fm/api">Last.fm Music Discovery API</a>にアクセスし、<span
+                    class="button-like-text">Get an API account</span>を押下してください。</li>
+
+            <div style="text-align: center;">
+                <a href="./images/lastfm2.png" data-lightbox="misskey-group"><img src="./images/lastfm2.png" alt=""
+                        width="600"></a>
+            </div>
+            <li>APIアカウント作成ページが表示されるので、以下を参考に値を設定して<span class="button-like-text">SUBMIT</span>を押下してください。</li>
+            <div style="text-align: center;">
+                <a href="./images/lastfm3.png" data-lightbox="misskey-group"><img src="./images/lastfm3.png" alt=""
+                        width="600"></a>
+            </div>
+            <ul>
+                <li>Contact email…last.fmアカウント作成時に使用したメールドレスが初期設定されているので、そのままで構いません。</li>
+                <li>Application name…何らかの値を設定してください。</li>
+                <div class="box-memo">
+                    <p>
+                        BaconJam用のappであることが分かるような名前の設定を推奨します。
+                    </p>
+                </div>
+                <li>Application description…空欄で構いません。</li>
+                <li>Callback URL…空欄で構いません。</li>
+                <li>Apprication homepage…空欄で構いません。</li>
+            </ul>
+            <li>以下の図のようなページに切り替わったら、APIアカウントが正しく作成された状態です。このページの<code>API key</code>の値を控えてください。</li>
+            <div class="box-memo">
+                <p>
+                    <code>API key</code>の値を忘れてしまった場合は、<a
+                        href="https://www.last.fm/api/accounts">APIアプリケーション一覧ページ</a>で再度確認してください。</del>
+                </p>
+            </div>
+            <div style="text-align: center;">
+                <a href="./images/lastfm4.png" data-lightbox="misskey-group"><img src="./images/lastfm4.png" alt=""
+                        width="600"></a>
+            </div>
+        </ol>
+
+        <h2>連携用アプリの設定</h2>
+        <div class="box-check">
+            <p>
+                ここでは、例として<a href="https://play.google.com/store/apps/details?id=com.arn.scrobble&hl=ja&gl=US">Pano
+                    Scrobbler</a>を使用した設定方法について解説します。
+            </p>
+        </div>
+        <ol>
+            <li>スマートフォンに<a href="https://play.google.com/store/apps/details?id=com.arn.scrobble&hl=ja&gl=US">Pano
+                    Scrobbler</a>をインストールしてください。</li>
+            <li>Pano Scrobblerを起動して<span class="button-like-text">Last.fm</span>を押下してください。</li>
+            <div style="text-align: center;">
+                <a href="./images/lastfm5.png" data-lightbox="misskey-group"><img src="./images/lastfm5.png" alt=""
+                        width="200"></a>
+            </div>
+            <li>last.fmのアプリケーション接続画面に切り替わるので、<span class="button-like-text">YES, ALLOW ACCESS</span>を押下してください。</li>
+            <div style="text-align: center;">
+                <a href="./images/lastfm6.png" data-lightbox="misskey-group"><img src="./images/lastfm6.png" alt=""
+                        width="200"></a>
+            </div>
+            <li>通知へのアクセスを許可してください。</li>
+            <li>Scrobble対象の<span class="button-like-text">開く</span>を押下して、YouTube Musicのみにチェックが入った状態にしてください。</li>
+            <div style="text-align: center;">
+                <a href="./images/lastfm8.png" data-lightbox="misskey-group"><img src="./images/lastfm8.png" alt=""
+                        width="200"></a>
+                <a href="./images/lastfm9.png" data-lightbox="misskey-group"><img src="./images/lastfm9.png" alt=""
+                        width="200"></a>
+            </div>
+            <li>通知を許可してください。</li>
+            <li>アプリの設定を開き、「Scrobbleの遅延」の「分」を最小の30秒に設定したら、Pano Scrobblerの設定は完了です。</li>
+        </ol>
+        <footer style="background-color: #95cf4a;padding: 10px;">
+            <p style="text-align: center;">&copy; <a href="https://misskey.io/@96ENU">くろいぬ/Falhong-Cha.</a> 2024.</p>
+        </footer>
+        <script src="./js/imgAutoResize.js"></script>
+        <script src="./js/load-version.js"></script>
+        <script src="./js/generate-toc.js"></script>
+</body>
+
+</html>
