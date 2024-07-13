@@ -1,0 +1,44 @@
+hr {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    color: white;
+    border: none;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr::after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+hr.new {
+    border-top: 3px double green;
+}
+
+hr.new::after {
+    background: green;
+    content: '新規';
+}
+
+hr.change {
+    border-top: 3px double orange;
+}
+
+hr.change::after {
+    background: orange;
+    content: '変更';
+}
+
+hr.fix {
+    border-top: 3px double red;
+}
+
+hr.fix::after {
+    background: red;
+    content: '修正';
+}
