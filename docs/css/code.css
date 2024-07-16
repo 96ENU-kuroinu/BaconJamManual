@@ -1,0 +1,14 @@
+code {
+    /* 内側の余白 */
+    padding: 0.2em 0.3em;
+    /* 外側の余白 */
+    margin: 0 0.2em;
+    /* 角の丸み */
+    border-radius: 5px;
+    /* 背景色 */
+    background: #f1f2f3;
+    /* 文字色 */
+    color: #404040;
+    /* 文字サイズ */
+    font-size: 0.9em;
+}
