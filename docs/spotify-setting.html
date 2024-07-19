@@ -12,6 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
         type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -96,25 +99,41 @@
                     <a href="./images/spotify6.png" data-lightbox="misskey-group"><img src="./images/spotify6.png"
                             alt="" width="600"></a>
                 </div>
-                <ul>
-                    <li>App name…何らかの値を設定してください。</li>
-                    <div class="box-memo">
-                        <p>
-                            BaconJam用のappであることが分かるような名前の設定を推奨します。
-                        </p>
-                    </div>
-                    <li>App description…何らかの値を設定してください。</li>
-                    <li>Website…空欄で構いません。</li>
-                    <li>Redirect URIs…必ず<code>http://localhost</code>という値を設定してください。</li>
-                    <li>Bundle IDs…空欄で構いません。</li>
-                    <li>Android packages…空欄で構いません。</li>
-                    <li>APIs used…以下に✅を入れてください。
-                        <ul>
-                            <li>Android</li>
-                            <li>Web API</li>
-                        </ul>
-                    </li>
-                </ul>
+                <table class="table-design">
+                    <tr>
+                        <td class="title-start">App name</td>
+                        <td class="detail-start">何らかの値を設定してください。</td>
+                    </tr>
+                    <tr>
+                        <td class="title">App description</td>
+                        <td>何らかの値を設定してください。</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Website</td>
+                        <td>空欄で構いません。</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Redirect URIs</td>
+                        <td>必ず<code>http://localhost</code>という値を設定してください。</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Bundle IDs</td>
+                        <td>空欄で構いません。</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Android packages</td>
+                        <td>空欄で構いません。</td>
+                    </tr>
+                    <tr>
+                        <td class="title-end">APIs used</td>
+                        <td class="detail-end">以下に✅を入れてください。
+                            <ul>
+                                <li>Android</li>
+                                <li>Web API</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </li>
             <li>
                 <blockquote>
@@ -147,8 +166,8 @@
 
             <li>以下の項目を控えてください。
                 <ul>
-                    <li>ClientID</li>
-                    <li>ClientSecret</li>
+                    <li><code>ClientID</code></li>
+                    <li><code>ClientSecret</code></li>
                 </ul>
             </li>
             <div class="box-caution">
@@ -165,7 +184,7 @@
                         width="200"></a>
                 <a href="./images/spotify11.png" data-lightbox="misskey-group"><img src="./images/spotify11.png" alt=""
                         width="200"></a>
-                <p>Spotify接続設定<span id="version"></span></p>
+                <p>Spotify接続設定<code id="version"></code></p>
             </div>
             <li><a href="#getinfo">接続に必要な情報の取得</a>で控えた<code>ClientID</code>,<code>ClientSecret</code>を<span
                     class="button-like-text">Spotify接続設定</span>に入力してください。</li>
