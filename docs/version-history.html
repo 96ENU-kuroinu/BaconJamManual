@@ -37,7 +37,7 @@
     <div class="contentsbody">
         <h1>バージョン履歴</h1>
         <p>最新バージョンは<span id="version"></span>です。</p>
-        <p>※歯抜けのバージョンは、バグ等の理由ですぐに後続バージョンに置き換えられたものです。</p>
+        <p>※歯抜けのバージョンコードは、バグ等の理由ですぐに後続バージョンに置き換えられたものです。</p>
         <div style="text-align: center;">
             <p class="button" id="openAllBtn"><a href="JavaScript:void(0)">すべての詳細をひらく</a></p>
             <p class="button" id="closeAllBtn"><a href="JavaScript:void(0)">すべての詳細をとじる</a></p>
@@ -62,7 +62,61 @@
 
         <span class="button-like-text"><span class="material-icons" style="font-size: 1.2em;">iconname</span></span>
         -->
-
+        <details class="details">
+            <summary class="summary">1.4.0(バージョンコード27)</summary>
+            <div class="content">
+                <p>
+                    リリース日：2024年05月01日
+                    <hr class="new">
+                    <hr class="change">
+                <ul>
+                    <li>サポート対象のandroid OSを13以上から5以上に拡張しました。</li>
+                </ul>
+                <hr class="fix">
+                </p>
+            </div>
+        </details>
+        <details class="details">
+            <summary class="summary">1.3.9(バージョンコード26)</summary>
+            <div class="content">
+                <p>
+                    リリース日：2024年04月30日
+                    <hr class="new">
+                <ul>
+                    <li>Misskeyと連携後、ハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
+                                style="font-size: 1.2em;">menu</span></span>のアイコンを押下するとMisskeyのプロフィールにジャンプする機能を追加しました。
+                    </li>
+                    <li>「なうぷれ投稿」の際に、以下に含まれる<code>:</code>を<code>：</code>に変換し、カスタム絵文字の表示が崩れるのを防ぐ処理を追加しました。</li>
+                    <ul>
+                        <li>曲名</li>
+                        <li>アーティスト名</li>
+                        <li>アルバム名</li>
+                    </ul>
+                </ul>
+                <hr class="change">
+                <hr class="fix">
+                </p>
+            </div>
+        </details>
+        <details class="details">
+            <summary class="summary">1.3.8(バージョンコード25)</summary>
+            <div class="content">
+                <p>
+                    リリース日：2024年04月28日
+                    <hr class="new">
+                <ul>
+                    <li><a href="https://misskey-hub.net/ja/servers/">Misskey
+                            Hubのサーバー一覧</a>に掲載されていないサーバーも接続先として指定できる機能を追加しました。</li>
+                    <li>ライトテーマ/ダークテーマ変更時にトーストメッセージを表示する機能を追加しました。</li>
+                </ul>
+                <hr class="change">
+                <ul>
+                    <li>接続先サーバー変更時に、対象のサーバーのカスタム絵文字を自動的に取得するように変更しました。</li>
+                </ul>
+                <hr class="fix">
+                </p>
+            </div>
+        </details>
         <details class="details">
             <summary class="summary">1.3.7(バージョンコード24)</summary>
             <div class="content">
@@ -193,7 +247,8 @@
                     <hr class="new">
                     <hr class="change">
                 <ul>
-                    <li>ハンバーガーメニュー内のUIを変更しました。</li>
+                    <li>ハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
+                                style="font-size: 1.2em;">menu</span></span>内のUIを変更しました。</li>
                 </ul>
                 <hr class="fix">
                 </p>
@@ -207,7 +262,8 @@
                     <hr class="new">
                     <hr class="change">
                 <ul>
-                    <li>ハンバーガーメニュー内の広告をテスト用から実際の広告に変更しました。</li>
+                    <li>ハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
+                                style="font-size: 1.2em;">menu</span></span>内の広告をテスト用から実際の広告に変更しました。</li>
                 </ul>
                 <hr class="fix">
                 </p>
