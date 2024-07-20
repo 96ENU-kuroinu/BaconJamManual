@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const versionElement = document.getElementById('version');
-    if (versionElement) {
-        versionElement.textContent = "Ver 1.5.0";
+    const versionElements = document.querySelectorAll('#version');
+    if (versionElements) {
+        versionElements.forEach((versionElement) => {
+            versionElement.textContent = "Ver 1.5.0";
+        })
     }
 });
