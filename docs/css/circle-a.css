@@ -1,0 +1,14 @@
+.circle-a {
+    width: 50%; /* 幅をパーセンテージで指定 */
+    max-width: 350px; /* 最大幅 */
+    min-width: 100px; /* 最小幅 */
+    text-align: center;
+    margin: 5px;
+    background-color: #95cf4a;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    border-radius: 50px;
+    display: inline-block;
+}
