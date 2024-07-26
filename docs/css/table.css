@@ -12,6 +12,10 @@
     border: solid 1px #95cf4a;
 }
 
+.table-design td.invisible {
+    border: none;
+}
+
 .table-design td.detail-start {
     border-top-right-radius: 5px;
 }
@@ -21,8 +25,8 @@
     border: solid 1px #95cf4a;
 }
 
-
 .table-design td.title-start {
+    text-align: center;
     color: #ffffff;
     font-weight: bold;
     background: #95cf4a;
@@ -30,15 +34,26 @@
 }
 
 .table-design td.title {
+    text-align: center;
     color: #ffffff;
     font-weight: bold;
     background: #95cf4a;
 }
 
 .table-design td.title-end {
+    text-align: center;
     color: #ffffff;
     font-weight: bold;
     background: #95cf4a;
     border-bottom-left-radius: 5px;
+    border: solid 1px #95cf4a;
+}
+
+.table-design td.title-top-end {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    background: #95cf4a;
+    border-top-right-radius: 5px;
     border: solid 1px #95cf4a;
 }
