@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
 <body>
@@ -39,12 +41,27 @@
     <div class="contentsbody">
         <h1>テーマの設定</h1>
 
+        設定画面の<span class="button-like-text">テーマ設定</span>を押下して、テーマ設定を展開してください。
+
+        <div style="text-align: center;">
+            <a href="./images/theme1.png" data-lightbox="misskey-group"><img src="./images/theme1.png" alt=""
+                    width="200"></a>
+            <a href="./images/theme2.png" data-lightbox="misskey-group"><img src="./images/theme2.png" alt=""
+                    width="200"></a>
+            <p>テーマ詳細設定<code id="version"></code></p>
+        </div>
+
         <div id="toc">
             <ul id="toc-list"></ul>
         </div>
 
         <h2>テーマカラーの変更</h2>
         <ol>
+            <li>プルダウンを押下することで、以下のいずれかからテーマカラーを選択できます。</li>
+            <div style="text-align: center;">
+                <a href="./images/theme3.png" data-lightbox="misskey-group"><img src="./images/theme3.png" alt=""
+                        width="200"></a>
+            </div>
             <table class="table-design">
                 <tbody>
                     <tr>
@@ -101,9 +118,22 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="box-memo">
+                <p>
+                    選択したテーマカラーは、ボタンその他のUIに反映されます。
+                </p>
+            </div>
         </ol>
         <h2>ライトテーマ/ダークテーマの変更</h2>
         <ol>
+            <li>ラジオボタンを押下することで、ライトテーマ/ダークテーマを切り替えることができます。色の組み合わせは以下の通りです。</li>
+            <div style="text-align: center;">
+                <a href="./images/theme4.png" data-lightbox="misskey-group"><img src="./images/theme4.png" alt=""
+                        width="200"></a>
+                <a href="./images/theme5.png" data-lightbox="misskey-group"><img src="./images/theme5.png" alt=""
+                        width="200"></a>
+                <p>ライトテーマ/ダークテーマの切り替えサンプル<code id="version"></code></p>
+            </div>
             <table class="table-design">
                 <tr>
                     <td class="invisible"></td>
@@ -121,6 +151,26 @@
                     <td class="detail-end">#2F2F2F</td>
                 </tr>
             </table>
+            <li>ボタン上に表示される文字やアイコンなど、テーマカラーの影響を受けるものについては、BT.709規格の係数を使用してテーマカラーをグレースケール化した結果、<code>#000000</code>,<code>#FFFFFF</code>のどちらを表示するかを決定しています。
+            </li>
+            \begin{align}
+            T_R &= テーマカラーの\texttt{R}値 \\
+            T_G &= テーマカラーの\texttt{G}値 \\
+            T_B &= テーマカラーの\texttt{B}値 \\\\
+            k_R &= 0.2126 \\
+            k_G &= 0.7152 \\
+            k_B &= 0.0722 \\\\
+            x &= T_R\times k_R + T_G\times k_G + T_B\times k_B\\
+            \end{align}
+            背景色はこの和が小さければ白に近く、大きければ黒に近いことになります。よって、およその中間値である<code>127</code>を閾値とすることで、
+            \begin{align}
+            文字色 &=
+            \begin{cases}
+            \texttt{#000000} & (x \geq 127)\\
+            \texttt{#FFFFFF} & (x < 127)
+            \end{cases}
+            \end{align}
+            になります。
         </ol>
     </div>
     <footer style="background-color: #95cf4a;padding: 10px;">
