@@ -1,4 +1,5 @@
 .summary {
+    color: white;
     position: relative;
     display: block;
     padding: 10px 10px 10px 30px;
@@ -40,6 +41,7 @@
 
 .details[open] {
     .summary {
+        color: black;
         background-color: #d8e2cd;
 
         &:before {
@@ -48,6 +50,7 @@
     }
 
     .content {
+        color: black;
         animation: fadeIn 0.5s ease;
     }
 }
