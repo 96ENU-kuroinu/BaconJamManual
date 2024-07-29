@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>インストール済バージョンの確認</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
+                    <span itemprop="name">TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./guide-note-region.html">
+                    <span itemprop="name">インストール済バージョンの確認</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </header>
+
+    <div class="contentsbody">
+        <h1>インストール済バージョンの確認</h1>
+
+        <ol>
+            <li>ホーム画面のハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
+                        style="font-size: 1.2em;">menu</span></span>を表示し、<span
+                    class="button-like-text">アプリについて</span>を押下してください。</li>
+        </ol>
+        <div style="text-align: center;">
+            <a href="./images/current-version1.png" data-lightbox="misskey-group"><img
+                    src="./images/current-version1.png" alt="" width="200"></a>
+        </div>
+        <li>画面上部に、インストール済バージョンが表示されます。</li>
+        <div style="text-align: center;">
+            <a href="./images/current-version2.png" data-lightbox="misskey-group"><img
+                    src="./images/current-version2.png" alt="" width="200"></a>
+        </div>
+        <li><span class="button-like-text">アップデートを確認する</span>を押下すると、<a
+                href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Google
+                Playストア</a>へアクセスします。</li>
+            <div class="box-memo">
+                <p>
+                    最新バージョンは<code id="version"></code>です。古いバージョンをご利用の方はアップデートされることをおすすめします。
+                </p>
+            </div>
+    </div>
+    <footer style="background-color: #95cf4a;padding: 10px;">
+        <p style="text-align: center;">&copy; <a href="https://misskey.io/@96ENU"><img
+                    src="./images/falhongcha-logo.png" width="150"></a> 2024.</p>
+    </footer>
+    <script src="./js/imgAutoResize.js"></script>
+    <script src="./js/load-version.js"></script>
+    <script src="./js/generate-toc.js"></script>
+</body>
+
+</html>
