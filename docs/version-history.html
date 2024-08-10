@@ -66,6 +66,27 @@
 
         <span class="button-like-text"><span class="material-icons" style="font-size: 1.2em;">iconname</span></span>
         -->
+        <details class="details" id="version45">
+            <summary class="summary">1.6.1(バージョンコード45)</summary>
+            <div class="content">
+                <p>
+                    リリース日：2024年08月10日
+                    <hr class="new">
+                    <hr class="change">
+                <ul>
+                    <li>設定画面の<span class="button-like-text">なうぷれ設定</span>→<span
+                            class="button-like-text">投稿文パターン</span>で「カスタム」を選択した場合のみ、プレーンテキストエリアが表示されるように変更しました。</li>
+                    <li>設定画面の<span class="button-like-text">なうぷれ投稿する</span>を切り替えた際に、フィードバック振動を行う機能を追加しました。</li>
+                </ul>
+                <hr class="fix">
+                <ul>
+                    <li>設定画面の<span class="button-like-text">なうぷれ設定</span>→<span
+                            class="button-like-text">投稿文パターン</span>で「カスタム」以外を選択していても、プレーンテキストエリアが編集できる不具合を修正しました。</li>
+                    <li>投稿先サーバーを一度も変更していない場合、MFMプレビューにカスタム絵文字が反映されない不具合を修正しました。</li>
+                </ul>
+                </p>
+            </div>
+        </details>
         <details class="details" id="version44">
             <summary class="summary">1.6.0(バージョンコード44)</summary>
             <div class="content">
@@ -717,10 +738,10 @@
             </div>
         </details>
     </div>
-    <footer style="background-color: #95cf4a;padding: 10px;">
-        <p style="text-align: center;">&copy; <a href="https://misskey.io/@96ENU"><img
-                    src="./images/falhongcha-logo.png" width="150"></a> 2024.</p>
+    <footer>
+        <div id="footer"></div>
     </footer>
+    <script src="./js/load-footer.js"></script>
     <script src="./js/details-open-close.js"></script>
     <script src="./js/load-version.js"></script>
 </body>
