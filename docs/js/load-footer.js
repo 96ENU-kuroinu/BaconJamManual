@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // aタグを作成
     const a = document.createElement('a');
     a.href = 'https://misskey.io/@96ENU'; // リンク先のURLを設定
+    a.target = '_blank';
 
     // imgタグを作成してaタグに追加
     const img = document.createElement('img');
