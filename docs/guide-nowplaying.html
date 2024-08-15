@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style-notes.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>投稿範囲の設定</title>
+    <title>なうぷれ投稿について</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
@@ -28,8 +30,8 @@
             </li>
 
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="./guide-note-region.html">
-                    <span itemprop="name">投稿範囲の設定</span>
+                <a itemprop="item" href="./guide-nowplaying.html">
+                    <span itemprop="name">なうぷれ投稿について</span>
                 </a>
                 <meta itemprop="position" content="2" />
             </li>
@@ -37,13 +39,39 @@
     </header>
 
     <div class="contentsbody">
-        <h1>投稿範囲の設定</h1>
+        <h1>なうぷれ投稿について</h1>
+        <ol>
+            <li>ホーム画面のハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
+                        style="font-size: 1.2em;">menu</span></span>を押下してドロワーを表示し、<span
+                    class="button-like-text">設定</span>を押下してください。</li>
+        </ol>
+
+        <div id="toc">
+            <ul id="toc-list"></ul>
+        </div>
+
+        <h2>有効/無効化</h2>
+        <ul>
+            <li><span class="button-like-text">なうぷれ投稿する</span>をオンにすると、音楽再生時になうぷれ投稿されるようになります。</li>
+            <div style="text-align: center;">
+                <a href="./images/nowplaying1.png" data-lightbox="misskey-group"><img src="./images/nowplaying1.png"
+                        alt="" width="200"></a>
+            </div>
+            <li>Misskeyへの投稿に必要なアクセストークンが発行されていない場合、以下のようなダイアログが表示されます。</li>
+            <div style="text-align: center;">
+                <a href="./images/nowplaying2.png" data-lightbox="misskey-group"><img src="./images/nowplaying2.png"
+                        alt="" width="200"></a>
+            </div>
+            <li><span class="button-like-text">OK</span>を押下すると、<a href="./misskey-setting.html">Misskeyとの連携</a>に進みます。
+            </li>
+        </ul>
+        <h2>投稿範囲</h2>
         <ol>
             <li>設定画面の「なうぷれ設定」の<span class="button-like-text">詳細</span>を押下して、詳細設定を展開して下さい。</li>
             <div style="text-align: center;">
-                <a href="./images/note-region1.png" data-lightbox="misskey-group"><img src="./images/note-region1.png"
+                <a href="./images/nowplaying3.png" data-lightbox="misskey-group"><img src="./images/nowplaying3.png"
                         alt="" width="200"></a>
-                <a href="./images/note-region2.png" data-lightbox="misskey-group"><img src="./images/note-region2.png"
+                <a href="./images/nowplaying4.png" data-lightbox="misskey-group"><img src="./images/nowplaying4.png"
                         alt="" width="200"></a>
                 <p>なうぷれ詳細設定<code id="version"></code></p>
             </div>
@@ -67,26 +95,54 @@
                 </tr>
             </table>
             <div style="text-align: center;">
-                <a href="./images/note-region3.png" data-lightbox="misskey-group"><img src="./images/note-region3.png"
+                <a href="./images/nowplaying5.png" data-lightbox="misskey-group"><img src="./images/nowplaying5.png"
                         alt="" width="200"></a>
                 <p>ドロップダウン一覧<code id="version"></code></p>
             </div>
             <li>ドロップダウンで<span class="button-like-text">チャンネル</span>を選択すると、ドロップダウンの下に<span
                     class="button-like-text">チャンネルを選択</span>ボタンが表示されます。</li>
             <div style="text-align: center;">
-                <a href="./images/note-region4.png" data-lightbox="misskey-group"><img src="./images/note-region4.png"
+                <a href="./images/nowplaying6.png" data-lightbox="misskey-group"><img src="./images/nowplaying6.png"
                         alt="" width="200"></a>
             </div>
             <li><span class="button-like-text">チャンネルを選択</span>ボタンを押下すると、チャンネル選択画面に移動します。</li>
             <li>チャンネル名またはチャンネルIDを検索欄に入力すると、候補が表示されます。</li>
             <div style="text-align: center;">
-                <a href="./images/note-region5.png" data-lightbox="misskey-group"><img src="./images/note-region5.png"
+                <a href="./images/nowplaying7.png" data-lightbox="misskey-group"><img src="./images/nowplaying7.png"
                         alt="" width="200"></a>
-                <a href="./images/note-region6.png" data-lightbox="misskey-group"><img src="./images/note-region6.png"
+                <a href="./images/nowplaying8.png" data-lightbox="misskey-group"><img src="./images/nowplaying8.png"
                         alt="" width="200"></a>
             </div>
             <li>表示されたチャンネル名を押下すると、投稿先として選択できます。</li>
         </ol>
+        <h2>アルバムアートワークの添付</h2>
+        <ol>
+            <li>設定画面の「なうぷれ設定」の<span class="button-like-text">詳細</span>を押下して、詳細設定を展開して下さい。</li>
+            <div style="text-align: center;">
+                <a href="./images/nowplaying9.png" data-lightbox="misskey-group"><img src="./images/nowplaying9.png"
+                        alt="" width="200"></a>
+                <a href="./images/nowplaying10.png" data-lightbox="misskey-group"><img src="./images/nowplaying10.png"
+                        alt="" width="200"></a>
+                <p>なうぷれ詳細設定<code id="version"></code></p>
+            </div>
+            <li>アルバムアートのドロップダウンで、以下のいずれかから添付モードを選択できます。</li>
+            <ul>
+                <li>添付しない</li>
+                <li>Wi-Fi接続時のみ添付する</li>
+                <li>モバイル通信でも添付する</li>
+            </ul>
+            <div style="text-align: center;">
+                <a href="./images/nowplaying11.png" data-lightbox="misskey-group"><img src="./images/nowplaying11.png"
+                        alt="" width="200"></a>
+                <p>ドロップダウン一覧<code id="version"></code></p>
+            </div>
+            <li>添付可能なアルバムアートが音楽ファイルに埋め込まれていない場合、以下の代替イラストを投稿します。</li>
+            <div style="text-align: center;">
+                <a href="./images/noImage.png" data-lightbox="misskey-group"><img src="./images/noImage.png"
+                        alt="" width="200"></a>
+            </div>
+        </ol>
+        <h2>ノートの編集</h2>
     </div>
     <footer>
         <div id="footer"></div>
