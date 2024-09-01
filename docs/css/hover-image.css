@@ -1,15 +1,24 @@
 .hover-text {
-  display: inline;
-  position: relative;
-  cursor: pointer;
+    display: inline;
+    position: relative;
+    cursor: pointer;
 }
 
 #hover-image {
-  position: absolute;
-  width: auto; /* 画像の幅を自動で調整 */
-  max-width: 200px; /* 画像の最大幅を200pxに設定 */
-  max-height: 200px; /* 画像の最大高さを200pxに設定 */
-  display: none;
-  border: 2px solid #000;
-  z-index: 10; /* 画像をテキストの上に表示する */
+    position: absolute;
+    /* 画像の幅を自動で調整 */
+    width: auto;
+    /* 画像の最大幅を200pxに設定 */
+    max-width: 200px;
+    /* 画像の最大高さを200pxに設定 */
+    max-height: 200px;
+    display: none;
+    border: 2px solid #000;
+    /* 画像をテキストの上に表示する */
+    z-index: 10;
+    /* 初期状態では完全に透明 */
+    opacity: 0;
+    /* 0.5秒かけて透明度を変化させる */
+    transition: opacity 0.5s ease;
+    border-radius: 15px;
 }
