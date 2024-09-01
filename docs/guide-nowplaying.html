@@ -41,7 +41,8 @@
     <div class="contentsbody">
         <h1>なうぷれ投稿について</h1>
         <ol>
-            <li>ホーム画面のハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
+            <li><span class="hover-text" data-image="images/display-main.png">ホーム画面</span>のハンバーガーメニュー<span
+                    class="button-like-text"><span class="material-icons"
                         style="font-size: 1.2em;">menu</span></span>を押下してドロワーを表示し、<span
                     class="button-like-text">設定</span>を押下してください。</li>
         </ol>
@@ -138,11 +139,12 @@
             </div>
             <li>添付可能なアルバムアートが音楽ファイルに埋め込まれていない場合、以下の代替イラストを投稿します。</li>
             <div class="screenshots">
-                <a href="./images/noImage.png" data-lightbox="misskey-group"><img src="./images/noImage.png"
-                        alt="" width="200"></a>
+                <a href="./images/noImage.png" data-lightbox="misskey-group"><img src="./images/noImage.png" alt=""
+                        width="200"></a>
             </div>
         </ol>
         <h2>ノートの編集</h2>
+        <img id="hover-image" src="" alt="画像" style="display:none;">
     </div>
     <footer>
         <div id="footer"></div>
@@ -151,6 +153,7 @@
     <script src="./js/imgAutoResize.js"></script>
     <script src="./js/load-version.js"></script>
     <script src="./js/generate-toc.js"></script>
+    <script src="./js/show-image.js"></script>
 </body>
 
 </html>
