@@ -1,0 +1,15 @@
+.hover-text {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+}
+
+#hover-image {
+  position: absolute;
+  width: auto; /* 画像の幅を自動で調整 */
+  max-width: 200px; /* 画像の最大幅を200pxに設定 */
+  max-height: 200px; /* 画像の最大高さを200pxに設定 */
+  display: none;
+  border: 2px solid #000;
+  z-index: 10; /* 画像をテキストの上に表示する */
+}
