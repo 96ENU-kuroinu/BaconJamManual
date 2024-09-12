@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 detailsElement.open = true; // details を開く
             }
         }
-    }, 100); // 100ミリ秒の遅延を追加
+    }, 500); // 500ミリ秒の遅延を追加
 });
