@@ -10,11 +10,7 @@ window.onload = function () {
 
         // 要素が見つかった場合
         if (targetElement) {
-            // 要素のsummary要素を取得
-            const summaryElement = targetElement.querySelector('summary');
-
-            // summary要素をクリックしてdetailsを開く
-            summaryElement.click();
+            targetElement.open = true;
         } else {
             console.error('not found');
         }
