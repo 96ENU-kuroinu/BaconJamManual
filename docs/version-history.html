@@ -938,7 +938,26 @@
     <footer>
         <div id="footer"></div>
     </footer>
-    <script src="./js/auto-open-details.js"></script>
+    <script>
+        // ページが読み込まれたときに実行される関数
+        window.onload = function () {
+            // URLのハッシュ部分を取得
+            const hash = window.location.hash;
+
+            // ハッシュ部分が空でない場合
+            if (hash) {
+                // ハッシュに対応する要素を取得
+                const targetElement = document.getElementById(hash.substring(1));
+
+                // 要素が見つかった場合
+                if (targetElement) {
+                    targetElement.open = true;
+                } else {
+                    console.error('not found');
+                }
+            }
+        };
+    </script>
     <script src="./js/date-convert.js"></script>
     <script src="./js/details-open-close.js"></script>
     <script src="./js/generate-base-information-table.js"></script>
