@@ -7,13 +7,17 @@ hr {
     overflow: visible;
     text-align: center;
     height: 5px;
+    border-top: 3px double;
+    vertical-align: middle;
+    padding: 3px 0px 0px 0px;
 }
 
 hr::after {
     background: #fff;
-    padding: 0 4px;
+    padding: 2px 50px;
     position: relative;
     top: -13px;
+    border-radius: 5px;
 }
 
 hr.new {
