@@ -1,21 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // ページの読み込みが完全に終わった後に処理を行う
-    setTimeout(function() {
-        // URLからアンカーを取得
-        const hash = window.location.hash;
+// ページが読み込まれたときに実行される関数
+window.onload = function() {
+  // URLのハッシュ部分を取得
+  const hash = window.location.hash;
 
-        // アンカーが存在する場合
-        if (hash) {
-            // ハッシュから '#' を取り除く
-            const id = hash.substring(1);
+  // ハッシュ部分が空でない場合
+  if (hash) {
+    // ハッシュに対応する要素を取得
+    const targetElement = document.getElementById(hash.substring(1));
 
-            // 対応する details 要素を取得
-            const detailsElement = document.getElementById(id);
+    // 要素が見つかった場合
+    if (targetElement) {
+      // 要素のsummary要素を取得
+      const summaryElement = targetElement.querySelector('summary');
 
-            // details 要素が存在し、まだ開いていない場合
-            if (detailsElement && !detailsElement.open) {
-                detailsElement.open = true; // details を開く
-            }
-        }
-    }, 500); // 500ミリ秒の遅延を追加
-});
+      // summary要素をクリックしてdetailsを開く
+      summaryElement.click();
+    }
+  }
+};
