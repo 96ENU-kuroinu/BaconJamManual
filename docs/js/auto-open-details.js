@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // アンカーが存在する場合
     if (hash) {
+        // すべての<details>タグを閉じる
+        document.querySelectorAll('details').forEach(detail => {
+            detail.open = false;
+        });
+
         // ハッシュから '#' を取り除く
         const id = hash.substring(1);
 
