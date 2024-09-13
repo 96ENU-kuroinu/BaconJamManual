@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スケジュール予定・履歴</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- google-adsense -->
+    <meta name="google-adsense-account" content="ca-pub-2961043635944259">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
+                    <span itemprop="name">TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./schedules-history.html">
+                    <span itemprop="name">スケジュール予定・履歴</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+        <p id="lastUpdated"></p>
+    </header>
+
+    <div class="contentsbody">
+        <h1>スケジュール予定・履歴</h1>
+        <p>アプリのリリース等に関する作業予定・履歴です。</p>
+        <p><a href="https://calendar.google.com/calendar/u/0?cid=Y2ZjMGZiNjc2ZDZlNzI1MTg1ZjM3NjY3N2FiMzVmOGVhNzNjNzYyNWY2ZDVjNzI0OTMwZmI1ZjgzOTRhNTRiMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">こちら</a>からご自身のGoogleカレンダーに追加することもできます。</p>
+        <iframe
+            src="https://calendar.google.com/calendar/embed?src=cfc0fb676d6e725185f376677ab35f8ea73c7625f6d5c724930fb5f8394a54b2%40group.calendar.google.com&ctz=Asia%2FTokyo"
+            style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+        <div style="text-align: center;">
+            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
+                redirectToRandomUrl()">
+        </div>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="./js/generate-toc.js"></script>
+    <script src="./js/generate-url.js"></script>
+    <script src="./js/imgAutoResize.js"></script>
+    <script src="./js/load-footer.js"></script>
+    <script src="./js/load-last-update-date.js"></script>
+    <script src="./js/load-version.js"></script>
+</body>
+
+</html>
