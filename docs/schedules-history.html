@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style-notes.css">
+    <link rel="stylesheet" href="./css/details.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>スケジュール予定・履歴</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
@@ -46,9 +47,48 @@
     <div class="contentsbody">
         <h1>スケジュール予定・履歴</h1>
         <p>アプリのリリース等に関する作業予定・履歴です。</p>
+        <div class="box-memo">
+            <p>
+                BaconJam以外のアプリに関するものも記載されています。
+            </p>
+        </div>
         <p><a
                 href="https://calendar.google.com/calendar/u/0?cid=Y2ZjMGZiNjc2ZDZlNzI1MTg1ZjM3NjY3N2FiMzVmOGVhNzNjNzYyNWY2ZDVjNzI0OTMwZmI1ZjgzOTRhNTRiMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">こちら</a>からご自身のGoogleカレンダーに追加することもできます。
         </p>
+
+        <details class="details">
+            <summary class="summary">スケジュール略称対応表</summary>
+            <div class="content">
+                <table class="table-design">
+                    <tbody>
+                        <tr>
+                            <td class="title-start">BC</td>
+                            <td class="detail">
+                                BaconJam
+                                <ul>
+                                    <li><a
+                                            href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam">ストアページ</a>
+                                    </li>
+                                    <li><a href="https://96enu-kuroinu.github.io/BaconJamManual/">公式サイトTOP</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-end">IS</td>
+                            <td class="detail-end">IntervalSnap
+                                <div class="box-memo">
+                                    <p>
+                                        現在クローズドテスト中
+                                    </p>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+
         <iframe
             src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&bgcolor=%2395cf4a&src=Y2ZjMGZiNjc2ZDZlNzI1MTg1ZjM3NjY3N2FiMzVmOGVhNzNjNzYyNWY2ZDVjNzI0OTMwZmI1ZjgzOTRhNTRiMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E67C73"
             style="max-width: 791px; width: 100%; height: 600px; border-radius: 15px; overflow: hidden;" frameborder="0"
