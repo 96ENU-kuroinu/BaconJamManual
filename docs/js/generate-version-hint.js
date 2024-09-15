@@ -28,7 +28,7 @@ allDetails.forEach(details => {
     `;
 
     // 各シンボルのスタイル
-    const circleStyle = 'margin-right: 2px; font-size: 1.5em;';
+    const circleStyle = 'margin-right: 2px; font-size: 1.5em; text-shadow: 1px 1px 2px #666666;';
 
     // hrタグの次に要素があればシンボルを追加
     symbols += `<span style="${circleStyle} color: ${newHr.nextElementSibling       && newHr.nextElementSibling.tagName     !== 'HR' ? 'green'  : 'black'};">●</span>`;
