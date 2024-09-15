@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const li = document.createElement('li');
             const a = document.createElement('a');
             a.href = `#${id}`;
-            a.textContent = 'Step' + (index + 1) + '. ' + h2.textContent;
+            a.textContent = '(' + (index + 1) + ') ' + h2.textContent;
 
             // リストアイテムにリンクを追加し、目次に追加
             li.appendChild(a);
