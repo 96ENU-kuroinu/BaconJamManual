@@ -1,3 +1,12 @@
+// 最初に見つかったsummary要素を取得
+const firstSummary = document.querySelector('summary');
+
+// summary要素が見つかった場合
+if (firstSummary) {
+    // テキストの先頭に🆕を追加
+    firstSummary.innerHTML = '<span style="font-size: 1.5em;vertical-align: middle;">🆕</span>' + firstSummary.innerHTML;
+}
+
 // すべてのdetails要素を取得
 const allDetails = document.querySelectorAll('.details');
 
