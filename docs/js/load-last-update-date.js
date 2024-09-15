@@ -9,6 +9,6 @@ let formattedDate = lastModified.getFullYear() + '年' +
     lastModified.getMinutes() + '分';
 
 // フォーマットした日付を表示
-document.getElementById('lastUpdated').innerText = '最終更新日：' + formattedDate;
+document.getElementById('lastUpdated').innerText = '🆕最終更新：' + formattedDate;
 document.getElementById('lastUpdated').style.color = 'white';
 document.getElementById('lastUpdated').style.fontWeight = 'bold';
