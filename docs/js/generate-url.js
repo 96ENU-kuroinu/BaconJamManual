@@ -1,7 +1,9 @@
 // 遷移先のURLを配列で定義
 const redirectUrls = [
     "https://amzn.to/3AZFcnw",
+    "https://amzn.to/3B2Dly9",
     "https://amzn.to/3B3xVmL",
+    "https://amzn.to/3B619kW",
     "https://amzn.to/3MFx9yV",
     "https://amzn.to/3MHltLN",
     "https://amzn.to/3MIs492",
@@ -9,13 +11,18 @@ const redirectUrls = [
     "https://amzn.to/3TRdpfN",
     "https://amzn.to/3TsdsOB",
     "https://amzn.to/3XFKFbZ",
+    "https://amzn.to/3XGbuwF",
+    "https://amzn.to/3XHnUV0",
     "https://amzn.to/3XHt7fK",
+    "https://amzn.to/3XIbrAx",
     "https://amzn.to/3XJnu0D",
     "https://amzn.to/3XnrRwM",
     "https://amzn.to/3Xsj0dm",
+    "https://amzn.to/3XuB5aN",
     "https://amzn.to/3ZiiVeP",
     "https://amzn.to/3ziLAFS",
     "https://amzn.to/3zjjhaw",
+    "https://amzn.to/3ZJp2sX",
     "https://amzn.to/3zkigyS",
     "https://amzn.to/3ZmxRII",
     "https://amzn.to/47mi8LT",
@@ -36,6 +43,7 @@ const redirectUrls = [
     "https://amzn.to/4gpfclx",
     "https://amzn.to/4gqijcZ",
     "https://amzn.to/4gqYjXZ",
+    "https://amzn.to/4gv3BBB",
 ];
 
 // ランダムな遷移先URLを取得する関数
