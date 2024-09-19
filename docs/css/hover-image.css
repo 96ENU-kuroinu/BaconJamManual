@@ -2,6 +2,7 @@
     display: inline;
     position: relative;
     cursor: pointer;
+    font-weight: bold;
 }
 
 #hover-image {
