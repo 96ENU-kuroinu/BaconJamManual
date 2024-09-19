@@ -8,6 +8,7 @@ const redirectUrls = [
     "https://amzn.to/3MHltLN",
     "https://amzn.to/3MIs492",
     "https://amzn.to/3MJVXWp",
+    "https://amzn.to/3MRMmgk",
     "https://amzn.to/3TRdpfN",
     "https://amzn.to/3TsdsOB",
     "https://amzn.to/3XFKFbZ",
@@ -44,6 +45,7 @@ const redirectUrls = [
     "https://amzn.to/4gqijcZ",
     "https://amzn.to/4gqYjXZ",
     "https://amzn.to/4gv3BBB",
+    "https://amzn.to/3ze7GJT",
 ];
 
 // ランダムな遷移先URLを取得する関数
