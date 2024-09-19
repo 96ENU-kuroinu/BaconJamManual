@@ -47,32 +47,22 @@
         <h1>📩レビューを送信する</h1>
 
         <ol>
-            <li>ホーム画面のハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
+            <li><span class="hover-text" data-image="images/display-main.png">ホーム画面</span>のハンバーガーメニュー<span
+                    class="button-like-text"><span class="material-icons"
                         style="font-size: 1.2em;">menu</span></span>を押下してドロワーを表示し、<span
                     class="button-like-text">レビューする</span>を押下してください。</li>
             <div class="screenshots">
                 <a href="./images/review1.png" data-lightbox="misskey-group"><img src="./images/review1.png" alt=""
                         width="200"></a>
             </div>
-            <li>レビュー入力画面が表示されるので、点数と感想(任意)を入力してください。</li>
-            <div class="screenshots">
-                <a href="./images/review2.png" data-lightbox="misskey-group"><img src="./images/review2.png" alt=""
-                        width="200"></a>
-                <a href="./images/review3.png" data-lightbox="misskey-group"><img src="./images/review3.png" alt=""
-                        width="200"></a>
-            </div>
-            <li><span class="button-like-text">送信</span>を押下すると、Playストアへレビューが送信されます。</li>
-            <div class="box-memo">
-                <p>
-                    この送信画面は一度表示すると、一定期間再表示されなくなります。送信前に画面を閉じてしまった場合は、<a
-                        href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam">Playストアのアプリページ</a>でのレビューをお願いします。
-                </p>
-            </div>
-        </ol>
-        <div style="text-align: center;">
-            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
+            <li><a
+                    href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam">Playストアのアプリページ</a>に移動するので、点数と感想(任意)を入力してください。
+            </li>
+            <img id="hover-image" src="" alt="画像" style="display:none;">
+    </div>
+    <div style="text-align: center;">
+        <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
                 redirectToRandomUrl()">
-        </div>
     </div>
     <footer>
         <div id="footer"></div>
@@ -83,6 +73,7 @@
     <script src="./js/load-footer.js"></script>
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
+    <script src="./js/show-image.js"></script>
 </body>
 
 </html>
