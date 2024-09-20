@@ -21,6 +21,12 @@
     <meta name="google-adsense-account" content="ca-pub-2961043635944259">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
         crossorigin="anonymous"></script>
+    <!-- Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-twilight.min.css" rel="stylesheet" />
+
+    <!-- Prism.js Clipboard Plugin CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -151,6 +157,68 @@
             </div>
         </ol>
         <h2>ノートの編集</h2>
+        <ol>
+            <li><span class="hover-text" data-image="images/display-setting.png"></span>の「なうぷれ設定」の<span
+                    class="button-like-text">詳細</span>を押下して、詳細設定を展開して下さい。</li>
+            <div class="screenshots">
+                <a href="./images/nowplaying9.png" data-lightbox="misskey-group"><img src="./images/nowplaying9.png"
+                        alt="" width="200"></a>
+                <a href="./images/nowplaying10.png" data-lightbox="misskey-group"><img src="./images/nowplaying10.png"
+                        alt="" width="200"></a>
+                <p>なうぷれ詳細設定<code id="version"></code></p>
+            </div>
+            <li>投稿文パターンのドロップダウンで以下のいずれかから投稿文を選択することができます。</li>
+            <ol>
+                <li><img src="images/note-pattern-1-icon.png" alt="" width="30px"></li>
+                <ul>
+                    <li>プレーンテキスト</li>
+                    <pre style="border-radius: 10px;"><code class="language-javascript">#nowplaying #なうぷれ #BaconJam
+:blobcat_sing::left_side_balloon_with_tail:[ここに曲名]/[ここにアルバム名]
+&lt;center&gt;[ここにアーティスト名]&lt;/center&gt;
+</code></pre>
+                    <li>プレビュー</li>
+                    <div class="screenshots">
+                        <a href="./images/note-pattern-1-preview.png" data-lightbox="misskey-group"><img
+                                src="./images/note-pattern-1-preview.png" alt="" width="500"></a>
+                    </div>
+                </ul>
+                <li><img src="images/note-pattern-2-icon.gif" alt="" width="30px"></li>
+                <ul>
+                    <li>プレーンテキスト</li>
+                    <pre style="border-radius: 10px;"><code class="language-javascript">#nowplaying #なうぷれ #BaconJam
+🎤:yosano_party::left_side_balloon_with_tail:[ここに曲名]/[ここにアルバム名]
+&lt;center&gt;[ここにアーティスト名]&lt;/center&gt;
+</code></pre>
+                    <li>プレビュー</li>
+                    <div class="screenshots">
+                        <a href="./images/note-pattern-2-preview.png" data-lightbox="misskey-group"><img
+                                src="./images/note-pattern-2-preview.png" alt="" width="500"></a>
+                    </div>
+
+                </ul>
+                <li><img src="images/note-pattern-3-icon.gif" alt="" width="30px"></li>
+                <ul>
+                    <li>プレーンテキスト</li>
+                    <pre style="border-radius: 10px;"><code class="language-javascript">#nowplaying #なうぷれ #BaconJam
+&lt;center&gt;:smugDance::left_side_balloon_with_tail:[ここに曲名]/[ここにアルバム名]&lt;/center&gt;
+
+&lt;center&gt;\$[flip :ablobcall::ablobcall::ablobcall:]  :ablobcall::ablobcall::ablobcall:&lt;/center&gt;
+&lt;center&gt;:itiban_ii_kyoku:&lt;/center&gt;
+</code></pre>
+                    <li>プレビュー</li>
+
+                    <div class="screenshots">
+                        <a href="./images/note-pattern-3-preview.png" data-lightbox="misskey-group"><img
+                                src="./images/note-pattern-3-preview.png" alt="" width="500"></a>
+                    </div>
+                </ul>
+                <li>カスタム</li>
+                <ul>
+                    <li>自由にMFMを入力して投稿文を指定することができます。有志の方による作例は<a href="./custom-note-sample.html">こちら</a>のページにまとめてあります。
+                    </li>
+                </ul>
+            </ol>
+        </ol>
         <img id="hover-image" src="" alt="画像" style="display:none;">
         <div style="text-align: center;">
             <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
@@ -169,6 +237,12 @@
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
     <script src="./js/show-image.js"></script>
+    <!-- Prism.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Prism.js Clipboard Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
 </body>
 
 </html>
