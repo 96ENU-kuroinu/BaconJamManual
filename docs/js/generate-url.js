@@ -20,6 +20,7 @@ const redirectUrls = [
     "https://amzn.to/3XnrRwM",
     "https://amzn.to/3Xsj0dm",
     "https://amzn.to/3XuB5aN",
+    "https://amzn.to/3ze7GJT",
     "https://amzn.to/3ZiiVeP",
     "https://amzn.to/3ziLAFS",
     "https://amzn.to/3zjjhaw",
@@ -29,6 +30,7 @@ const redirectUrls = [
     "https://amzn.to/47mi8LT",
     "https://amzn.to/47nZGCB",
     "https://amzn.to/47sCL9l",
+    "https://amzn.to/47zHhTm",
     "https://amzn.to/4cYOXja",
     "https://amzn.to/4d6ZyIW",
     "https://amzn.to/4dRv9PX",
@@ -45,7 +47,6 @@ const redirectUrls = [
     "https://amzn.to/4gqijcZ",
     "https://amzn.to/4gqYjXZ",
     "https://amzn.to/4gv3BBB",
-    "https://amzn.to/3ze7GJT",
 ];
 
 // ランダムな遷移先URLを取得する関数
