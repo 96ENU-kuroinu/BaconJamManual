@@ -76,7 +76,47 @@
         -->
         <h2>1.7系(2024年08月27日～)</h2>
         <p>UIの英語切り替えに対応したため、系列を更新しました。</p>
-        <details class="details" id="version59"></details>
+        <details class="details" id="version60">
+        <summary class="summary">1.7.6(バージョンコード60)</summary>
+        <div class="content">
+
+
+            <div class="table-container" data-release-date="20240922" data-install-size="17.4[MB]"></div>
+
+            <hr class="new">
+            <ul>
+                <li>楽曲メタデータを取得失敗判定したときに出力する定型文を多言語対応しました。</li>
+            </ul>
+            <hr class="change">
+            <ul>
+                <li>楽曲メタデータを取得失敗判定する条件を変更しました。</li>
+                <table class="table-design">
+                    <tbody>
+                        <tr>
+                            <td class="title-start">変更前</td>
+                            <td class="detail-start">
+                                <ul>
+                                    <li>メタデータの値が<code>null</code></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-end">変更後</td>
+                            <td class="detail-end">
+                                <ul>
+                                    <li>メタデータの値が<code>null</code></li>
+                                    <li>メタデータの値がスペースのみ</li>
+                                    <li>メタデータの値がカラ文字</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+            <hr class="fix">
+        </div>
+        </details>
+        <details class="details" id="version59">
         <summary class="summary">1.7.5(バージョンコード59)</summary>
         <div class="content">
             <!-- 基本情報テーブル -->
