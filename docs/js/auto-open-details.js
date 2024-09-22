@@ -8,6 +8,8 @@ window.onload = function () {
         // ハッシュに対応する要素を取得
         const targetElement = document.getElementById(hash.substring(1));
 
+        console.log(targetElement);
+
         // 要素が見つかった場合
         if (targetElement) {
             targetElement.open = true;
