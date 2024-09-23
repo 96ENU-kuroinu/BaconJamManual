@@ -76,83 +76,103 @@
         -->
         <h2>1.7系(2024年08月27日～)</h2>
         <p>UIの英語切り替えに対応したため、系列を更新しました。</p>
-        <details class="details" id="version60">
-        <summary class="summary">1.7.6(バージョンコード60)</summary>
-        <div class="content">
+
+        <details class="details" id="version61">
+            <summary class="summary">1.7.7(バージョンコード61)</summary>
+            <div class="content">
 
 
-            <div class="table-container" data-release-date="20240922" data-install-size="17.4[MB]"></div>
-
-            <hr class="new">
-            <ul>
-                <li>楽曲メタデータを取得失敗判定したときに出力する定型文を多言語対応しました。</li>
-            </ul>
-            <hr class="change">
-            <ul>
-                <li>楽曲メタデータを取得失敗判定する条件を変更しました。</li>
-                <table class="table-design">
-                    <tbody>
-                        <tr>
-                            <td class="title-start">変更前</td>
-                            <td class="detail-start">
-                                <ul>
-                                    <li>メタデータの値が<code>null</code></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="title-end">変更後</td>
-                            <td class="detail-end">
-                                <ul>
-                                    <li>メタデータの値が<code>null</code></li>
-                                    <li>メタデータの値がスペースのみ</li>
-                                    <li>メタデータの値がカラ文字</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </ul>
-            <hr class="fix">
-        </div>
+                <div class="table-container" data-release-date="20240923" data-install-size="17.4[MB]"></div>
+                <hr class="new">
+                <ul>
+                    <li>再生するプレイリストを選択した時に、プレイリスト読込の進行状況を表示するダイアログを追加しました。</li>
+                </ul>
+                <hr class="change">
+                <ul>
+                    <li><span class="hover-text" data-image="images/display-drawer.png"></span>の<span
+                            class="button-like-text">ドライブのクリーニング</span>で、アルバムアートワークの削除に1秒の間隔を挟むように変更しました。</li>
+                </ul>
+                <hr class="fix">
+            </div>
         </details>
 
-        <details class="details" id="version59">
-        <summary class="summary">1.7.5(バージョンコード59)</summary>
-        <div class="content">
-            <!-- 基本情報テーブル -->
-            <div class="table-container" data-release-date="20240919" data-install-size="17.4[MB]"></div>
-            <!-- 新規 -->
-            <hr class="new">
-            <!-- 更新 -->
-            <hr class="change">
-            <ul>
-                <li><span class="hover-text" data-image="images/display-drawer.png"></span>の<span
-                        class="button-like-text">レビューする</span>ボタン押下時の機能を変更しました。
+        <details class="details" id="version60">
+            <summary class="summary">1.7.6(バージョンコード60)</summary>
+            <div class="content">
+
+
+                <div class="table-container" data-release-date="20240922" data-install-size="17.4[MB]"></div>
+
+                <hr class="new">
+                <ul>
+                    <li>楽曲メタデータを取得失敗判定したときに出力する定型文を多言語対応しました。</li>
+                </ul>
+                <hr class="change">
+                <ul>
+                    <li>楽曲メタデータを取得失敗判定する条件を変更しました。</li>
                     <table class="table-design">
                         <tbody>
                             <tr>
                                 <td class="title-start">変更前</td>
-                                <td class="detail-start"><code>In-App Review API</code>呼び出し</td>
+                                <td class="detail-start">
+                                    <ul>
+                                        <li>メタデータの値が<code>null</code></li>
+                                    </ul>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="title-end">変更後</td>
-                                <td class="detail-end"><a
-                                        href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam">アプリのストアページ</a>へアクセス
+                                <td class="detail-end">
+                                    <ul>
+                                        <li>メタデータの値が<code>null</code></li>
+                                        <li>メタデータの値がスペースのみ</li>
+                                        <li>メタデータの値がカラ文字</li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                <li>ソースコードを機能単位である程度分割しました。</li>
-                <div class="box-memo">
-                    <p>
-                        動作に対する影響はありません。
-                    </p>
-                </div>
-            </ul>
-            <!-- 修正 -->
-            <hr class="fix">
-        </div>
+                </ul>
+                <hr class="fix">
+            </div>
+        </details>
+
+        <details class="details" id="version59">
+            <summary class="summary">1.7.5(バージョンコード59)</summary>
+            <div class="content">
+                <!-- 基本情報テーブル -->
+                <div class="table-container" data-release-date="20240919" data-install-size="17.4[MB]"></div>
+                <!-- 新規 -->
+                <hr class="new">
+                <!-- 更新 -->
+                <hr class="change">
+                <ul>
+                    <li><span class="hover-text" data-image="images/display-drawer.png"></span>の<span
+                            class="button-like-text">レビューする</span>ボタン押下時の機能を変更しました。
+                        <table class="table-design">
+                            <tbody>
+                                <tr>
+                                    <td class="title-start">変更前</td>
+                                    <td class="detail-start"><code>In-App Review API</code>呼び出し</td>
+                                </tr>
+                                <tr>
+                                    <td class="title-end">変更後</td>
+                                    <td class="detail-end"><a
+                                            href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam">アプリのストアページ</a>へアクセス
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <li>ソースコードを機能単位である程度分割しました。</li>
+                    <div class="box-memo">
+                        <p>
+                            動作に対する影響はありません。
+                        </p>
+                    </div>
+                </ul>
+                <!-- 修正 -->
+                <hr class="fix">
+            </div>
         </details>
         <details class="details" id="version56">
             <summary class="summary">1.7.2(バージョンコード56)</summary>
