@@ -49,7 +49,8 @@
         <ol>
             <li><span class="hover-text" data-image="images/display-main.png"></span>のハンバーガーメニュー<span
                     class="button-like-text"><span class="material-icons"
-                        style="font-size: 1.2em;">menu</span></span>を押下して<span class="hover-text" data-image="images/display-drawer.png"></span>を表示し、<span
+                        style="font-size: 1.2em;">menu</span></span>を押下して<span class="hover-text"
+                    data-image="images/display-drawer.png"></span>を表示し、<span
                     class="button-like-text">ドライブのクリーニング</span>を押下してください。</li>
             <div class="screenshots">
                 <a href="./images/current-version1.png" data-lightbox="misskey-group"><img
@@ -66,9 +67,11 @@
                         src="./images/drive-cleaning3.png" alt="" width="200"></a>
             </div>
             <div class="box-memo">
-                <p>
-                    <code>Ver 1.7.2</code>以降のBaconJamを使用してアップロードしたアルバムアートワークのみが削除対象となります。古いバージョンをご利用の方はアップデートされることをおすすめします。
-                </p>
+                <ul>
+                    <li>削除処理でMisskeyサーバーに過剰な負荷をかけないために、1ファイル削除するごとに1秒の待機時間が発生します。</li>
+                    <li><code>Ver 1.7.2</code>以降のBaconJamを使用してアップロードしたアルバムアートワークのみが削除対象となります。古いバージョンをご利用の方はアップデートされることをおすすめします。
+                    </li>
+                </ul>
             </div>
         </ol>
         <img id="hover-image" src="" alt="画像" style="display:none;">

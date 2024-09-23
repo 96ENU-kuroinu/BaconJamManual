@@ -46,7 +46,8 @@
     <div class="contentsbody">
         <h1>テーマの設定</h1>
 
-        設定画面の<span class="button-like-text">テーマ設定</span>を押下して、テーマ設定を展開してください。
+        <span class="hover-text" data-image="images/display-setting.png"></span>の<span
+            class="button-like-text">テーマ設定</span>を押下して、テーマ設定を展開してください。
 
         <div class="screenshots">
             <a href="./images/theme1.png" data-lightbox="misskey-group"><img src="./images/theme1.png" alt=""
@@ -163,17 +164,18 @@
             T_R &= テーマカラーの\texttt{R}値 \\
             T_G &= テーマカラーの\texttt{G}値 \\
             T_B &= テーマカラーの\texttt{B}値 \\\\
-            k_R &= 0.2126 \\
-            k_G &= 0.7152 \\
-            k_B &= 0.0722 \\\\
-            x &= T_R\times k_R + T_G\times k_G + T_B\times k_B\\
+            k_R &= \texttt{0.2126} \\
+            k_G &= \texttt{0.7152} \\
+            k_B &= \texttt{0.0722} \\\\
+            x &= T_R\times k_R + T_G\times k_G + T_B\times k_B \tag{1}
             \end{align}
-            背景色はこの和が小さければ白に近く、大きければ黒に近いことになります。よって、およその中間値である<code>127</code>を閾値とすることで、
+            背景色は\( (1) \)の値が小さければ白に近く、大きければ黒に近いことになります。よって、およその中間値である<code>127</code>を閾値とすることで、
             \begin{align}
             文字色 &=
             \begin{cases}
-            \texttt{#000000} & (x \geq 127)\\
-            \texttt{#FFFFFF} & (x < 127) \end{cases} \end{align} になります。 </ol>
+            \texttt{#000000} & (x \geq \texttt{127})\\
+            \texttt{#FFFFFF} & (x < \texttt{127}) \end{cases} \end{align} になります。 </ol>
+                <img id="hover-image" src="" alt="画像" style="display:none;">
                 <div style="text-align: center;">
                     <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
                 redirectToRandomUrl()">
@@ -182,12 +184,14 @@
     <footer>
         <div id="footer"></div>
     </footer>
+    <script src="./js/generate-text-by-image.js"></script>
     <script src="./js/generate-toc.js"></script>
     <script src="./js/generate-url.js"></script>
     <script src="./js/imgAutoResize.js"></script>
     <script src="./js/load-footer.js"></script>
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
+    <script src="./js/show-image.js"></script>
 </body>
 
 </html>
