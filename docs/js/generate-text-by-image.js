@@ -11,6 +11,9 @@ function updateSpanText() {
         // Conditional logic to change text based on the data-image value
         let newText = '';
         switch (dataImage) {
+            case 'images/display-server-select.png':
+                newText = 'Misskeyサーバー選択画面';
+                break;
             case 'images/display-setting.png':
                 newText = '設定画面';
                 break;
