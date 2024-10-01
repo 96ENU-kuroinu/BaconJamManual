@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/style-notes.css">
     <link rel="stylesheet" href="./css/details.css">
     <link rel="stylesheet" href="./css/hr.css">
-    <link rel="stylesheet" href="./css/button.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BaconJam マニュアル</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
@@ -74,6 +73,7 @@
 
         <span class="button-like-text"><span class="material-icons" style="font-size: 1.2em;">iconname</span></span>
         -->
+
         <h2>1.7系(2024年08月27日～)</h2>
         <p>UIの英語切り替えに対応したため、系列を更新しました。</p>
 
@@ -95,7 +95,8 @@
                             href="https://fonts.google.com/specimen/Kiwi+Maru?subset=japanese&query=Kiwi+Maru">Kiwi
                             Maru</a>で表示するように変更しました。</li>
                     <ul>
-                        <li><span class="hover-text" data-image="images/display-drawer.png"></span>のプロフィールのID、連携先サーバー名</li>
+                        <li><span class="hover-text" data-image="images/display-drawer.png"></span>のプロフィールのID、連携先サーバー名
+                        </li>
                         <li><span class="hover-text" data-image="images/display-app-about.png"></span>のバージョン情報</li>
                         <li><span class="hover-text" data-image="images/display-channel-select-2.png"></span>のチャンネルID
                         </li>
@@ -1202,6 +1203,9 @@
             </div>
         </details>
         <img id="hover-image" src="" alt="画像" style="display:none;">
+
+        <button id="scrollToTopBtn" title="いちばん上に戻る">▲</button>
+
         <div style="text-align: center;">
             <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
                 redirectToRandomUrl()">
@@ -1222,6 +1226,7 @@
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
     <script src="./js/show-image.js"></script>
+    <script src="./js/to-top.js"></script>
 </body>
 
 

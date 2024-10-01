@@ -26,3 +26,20 @@
 .button a:hover::before {
   background-color: #aecea9;
 }
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px; /* 画面下からの距離 */
+  right: 20px;  /* 画面右からの距離 */
+  background-color: #95cf4a; /* ボタンの背景色 */
+  color: white; /* ボタンの文字色 */
+  border: 2px solid #4b6d1f;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #aecea9; /* ホバー時の背景色 */
+}
