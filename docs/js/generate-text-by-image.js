@@ -41,6 +41,9 @@ function updateSpanText() {
             case 'images/display-app-about.png':
                 newText = 'アプリについての画面';
                 break;
+            case 'images/display-sample-mfm.png':
+                newText = '作例画面';
+                break;
         }
 
         // Update the text content of the current span element
