@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❓よくある質問</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- google-adsense -->
+    <meta name="google-adsense-account" content="ca-pub-2961043635944259">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
+                    <span itemprop="name">🏠TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./guide-note-region.html">
+                    <span itemprop="name">❓よくある質問</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+        <p id="lastUpdated"></p>
+    </header>
+
+    <div class="contentsbody">
+        <h1>❓よくある質問</h1>
+        <details class="details">
+            <summary class="summary">プレイリストに曲を追加しようとすると、<code>権限が不足しています</code>というメッセージが表示されて追加に失敗する</summary>
+            <div class="content">
+                <p>android13未満で<code>Ver 1.8.0</code>未満のBaconJamを使用している場合、この不具合が発生します。</p>
+                <p><a
+                        href="https://96enu-kuroinu.github.io/BaconJamManual/guide-check-current-version.html">こちら</a>のページの手順を参考にインストール済みのバージョンを確認し、アップデートを行ってください。
+                </p>
+            </div>
+        </details>
+        <details class="details">
+            <summary class="summary">BaconJamに付与した権限が勝手に取り消される</summary>
+            <div class="content">
+                <p>android OSの仕様上、数か月使用していないアプリの権限は強制的に取り消されてしまいます。</p>
+                <div class="box-memo">
+                    <p>
+                        BaconJamで音楽を再生せず、Spotifyやlast.fmとの連携のみに使用している場合に取り消される可能性があります。
+                    </p>
+                </div>
+                <p>アプリの権限を手動で付与しなおしてください。</p>
+            </div>
+        </details>
+        <details class="details">
+            <summary class="summary">音楽再生などのバックグラウンド動作ができない</summary>
+            <div class="content">
+                <p><a
+                        href="https://96enu-kuroinu.github.io/BaconJamManual/guide-battery-optimization.html">こちら</a>のページの手順を参考に、バックグラウンドでの動作許可を与えてください。
+                </p>
+            </div>
+        </details>
+        <div style="text-align: center;">
+            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
+                redirectToRandomUrl()">
+        </div>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="./js/generate-toc.js"></script>
+    <script src="./js/generate-url.js"></script>
+    <script src="./js/imgAutoResize.js"></script>
+    <script src="./js/load-footer.js"></script>
+    <script src="./js/load-last-update-date.js"></script>
+    <script src="./js/load-version.js"></script>
+    <script src="./js/to-top.js"></script>
+</body>
+
+</html>

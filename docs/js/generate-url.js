@@ -45,6 +45,7 @@ const redirectUrls = [
     "https://amzn.to/4e0B9pG",
     "https://amzn.to/4e22k3j",
     "https://amzn.to/4eEUcG7",
+    "https://amzn.to/4eGskBI",
     "https://amzn.to/4ek7ozV",
     "https://amzn.to/4elHOKC",
     "https://amzn.to/4enSGYO",
