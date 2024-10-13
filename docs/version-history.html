@@ -79,12 +79,94 @@
         <h2>1.8系(2024年10月09日～)</h2>
         <p><span class="hover-text" data-image="images/display-sample-mfm.png"></span>を追加したため、系列を更新しました。</p>
 
+        <details class="details" id="version69">
+            <summary class="summary">1.8.2(バージョンコード69)</summary>
+            <div class="content">
+
+                <div class="table-container" data-release-date="20241013" data-install-size="25.2[MB]"></div>
+
+                <hr class="new">
+                <hr class="change">
+                <ul>
+                    <li>音楽ファイルのメタデータと置換される文字列を変更しました。</li>
+                    <table class="table-design">
+                        <tr>
+                            <td class="invisible"></td>
+                            <td class="title-start">変更前</td>
+                            <td class="title-top-end">変更後</td>
+                        </tr>
+                        <tr>
+                            <td class="title-start">曲名</td>
+                            <td>
+                                <ul>
+                                    <li><code>[ここに曲名]</code></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><code>[ここに曲名]</code></li>
+                                    <li><code>【ここに曲名】</code></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">アーティスト名</td>
+                            <td>
+                                <ul>
+                                    <li><code>[ここにアーティスト名]</code></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><code>[ここにアーティスト名]</code></li>
+                                    <li><code>【ここにアーティスト名】</code></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">アルバム名</td>
+                            <td>
+                                <ul>
+                                    <li><code>[ここにアルバム名]</code></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><code>[ここにアルバム名]</code></li>
+                                    <li><code>【ここにアルバム名】</code></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title-end">機種名</td>
+                            <td>
+                                <ul>
+                                    <li><code>[ここに機種名]</code></li>
+                                </ul>
+                            </td>
+                            <td class="detail-end">
+                                <ul>
+                                    <li><code>[ここに機種名]</code></li>
+                                    <li><code>【ここに機種名】</code></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                <div class="box-memo">
+                    <p>
+                        後方互換性を考慮して、<code>[ ]</code>で挟む場合も置換対象のままにしています。
+                    </p>
+                </div>
+                </ul>
+                <hr class="fix">
+            </div>
+        </details>
+
         <details class="details" id="version68">
             <summary class="summary">1.8.1(バージョンコード68)</summary>
             <div class="content">
 
                 <div class="table-container" data-release-date="20241011" data-install-size="25.2[MB]"></div>
-
                 <hr class="new">
                 <ul>
                     <li><span class="hover-text" data-image="images/display-app-about.png"></span>に以下のリンクを追加しました。</li>
@@ -279,7 +361,8 @@
                 <div class="table-container" data-release-date="20240927" data-install-size="17.4[MB]"></div>
                 <hr class="new">
                 <ul>
-                    <li>以下の入力欄の先頭に<span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">search</span>アイコンを追加しました。</li>
+                    <li>以下の入力欄の先頭に<span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">search</span>アイコンを追加しました。</li>
                     <ul>
                         <li><span class="hover-text" data-image="images/display-channel-select-1.png"></span></li>
                         <li><span class="hover-text" data-image="images/display-server-select.png"></span></li>
@@ -331,7 +414,9 @@
                 <hr class="change">
                 <ul>
                     <li><span class="hover-text" data-image="images/display-drawer.png"></span>の<span
-                            class="button-like-text"><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">cleaning_services</span>ドライブのクリーニング</span>で、アルバムアートワークの削除に1秒の間隔を挟むように変更しました。</li>
+                            class="button-like-text"><span class="material-icons"
+                                style="font-size: 1.2em; vertical-align: middle;">cleaning_services</span>ドライブのクリーニング</span>で、アルバムアートワークの削除に1秒の間隔を挟むように変更しました。
+                    </li>
                 </ul>
                 <hr class="fix">
             </div>
@@ -389,7 +474,8 @@
                 <hr class="change">
                 <ul>
                     <li><span class="hover-text" data-image="images/display-drawer.png"></span>の<span
-                            class="button-like-text"><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">star</span>レビューする</span>ボタン押下時の機能を変更しました。
+                            class="button-like-text"><span class="material-icons"
+                                style="font-size: 1.2em; vertical-align: middle;">star</span>レビューする</span>ボタン押下時の機能を変更しました。
                         <table class="table-design">
                             <tbody>
                                 <tr>
@@ -742,7 +828,8 @@
                             data-image="images/display-channel-select-2.png"></span>で、検索結果のチャンネルの角を丸めました。
                     </li>
                     <li><span class="hover-text" data-image="images/display-setting.png"></span>の折り畳み行のアイコンを<span
-                            class="material-icons" style="font-size: 1.2em; vertical-align: middle;">arrow_drop_down</span>からそれぞれ以下のアイコンに変更しました。
+                            class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">arrow_drop_down</span>からそれぞれ以下のアイコンに変更しました。
                     </li>
                     <table class="table-design">
                         <tbody>
@@ -753,17 +840,20 @@
                             </tr>
                             <tr>
                                 <td class="title">Misskey接続設定</td>
-                                <td><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>
+                                <td><span class="material-icons"
+                                        style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="title">Spotify接続設定</td>
-                                <td><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>
+                                <td><span class="material-icons"
+                                        style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="title">YouTube接続設定</td>
-                                <td><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>
+                                <td><span class="material-icons"
+                                        style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>
                                 </td>
                             </tr>
                             <tr>
@@ -780,9 +870,11 @@
                     <li>プレイリスト詳細画面内の以下のボタンのアイコンが小さく、視認しずらい不具合を修正しました。</li>
                     <ul>
                         <li><span class="button-like-text"><span class="material-icons"
-                                    style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_up</span></span></li>
+                                    style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_up</span></span>
+                        </li>
                         <li><span class="button-like-text"><span class="material-icons"
-                                    style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_down</span></span></li>
+                                    style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_down</span></span>
+                        </li>
                         <li><span class="button-like-text"><span class="material-icons"
                                     style="font-size: 1.2em; vertical-align: middle;">delete</span></span></li>
                     </ul>
@@ -812,9 +904,11 @@
                         <li>プレイリスト詳細画面</li>
                         <ul>
                             <li><span class="button-like-text"><span class="material-icons"
-                                        style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_up</span></span>を押下</li>
+                                        style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_up</span></span>を押下
+                            </li>
                             <li><span class="button-like-text"><span class="material-icons"
-                                        style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_down</span></span>を押下</li>
+                                        style="font-size: 1.2em; vertical-align: middle;">keyboard_arrow_down</span></span>を押下
+                            </li>
                         </ul>
                     </ul>
                 </ul>
@@ -1067,7 +1161,8 @@
                         <li>次の曲へ切り替える<span class="button-like-text"><span class="material-icons"
                                     style="font-size: 1.2em; vertical-align: middle;">skip_next</span></span>ボタン</li>
                         <li>前の曲へ切り替える<span class="button-like-text"><span class="material-icons"
-                                    style="font-size: 1.2em; vertical-align: middle;">skip_previous</span></span>ボタン</li>
+                                    style="font-size: 1.2em; vertical-align: middle;">skip_previous</span></span>ボタン
+                        </li>
                     </ul>
                 </ul>
                 <hr class="change">
@@ -1120,7 +1215,8 @@
                                 style="font-size: 1.2em; vertical-align: middle;">menu</span></span>に、連携しているMisskeyアカウントのプロフィールを表示する機能を追加しました。
                     </li>
                     <li>ハンバーガーメニュー<span class="button-like-text"><span class="material-icons"
-                                style="font-size: 1.2em; vertical-align: middle;">menu</span></span>に、感想用Googleフォームへのリンクを追加しました。</li>
+                                style="font-size: 1.2em; vertical-align: middle;">menu</span></span>に、感想用Googleフォームへのリンクを追加しました。
+                    </li>
                 </ul>
                 <hr class="change">
                 <hr class="fix">
