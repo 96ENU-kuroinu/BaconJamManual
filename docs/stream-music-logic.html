@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💽処理概要</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- google-adsense -->
+    <meta name="google-adsense-account" content="ca-pub-2961043635944259">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'forest'
+        });
+    </script>
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
+                    <span itemprop="name">🏠TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./stream-music-logic.html">
+                    <span itemprop="name">💽処理概要</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+        <p id="lastUpdated"></p>
+    </header>
+
+    <div class="contentsbody">
+        <h1>💽処理概要</h1>
+        <div class="mermaid">
+            graph TD
+            logic_begin(処理開始)
+            isConnectedNetwork{"ｲﾝﾀｰﾈｯﾄに
+            接続されている"}
+            isNowPlayingEnable{"なうぷれ投稿
+            が有効"}
+            hasMisskeyAccessToken{"Misskeyの
+            ｱｸｾｽﾄｰｸﾝ
+            発行済"}
+            hasSpotifyAccessToken{"Spotifyの
+            ｱｸｾｽﾄｰｸﾝ
+            発行済"}
+            isSpotifyPlaying{"Spotifyで
+            曲を再生中"}
+            isSameSong{"前回の
+            投稿と
+            同じ曲"}
+            note["なうぷれ投稿
+            実行"]
+            saveSong["投稿した
+            曲を記憶"]
+            haslastfmAccessToken{"last.fmの
+            ｱｸｾｽﾄｰｸﾝ
+            発行済"}
+            islastfmPlaying{"last.fmが
+            再生中の曲を
+            検知している"}
+            logic_end(処理終了)
+
+            haslastfmAccessToken --NO--> logic_end
+            hasMisskeyAccessToken --NO--> logic_end
+            hasMisskeyAccessToken --YES--> hasSpotifyAccessToken
+            hasSpotifyAccessToken --NO--> haslastfmAccessToken
+            hasSpotifyAccessToken --YES--> isSpotifyPlaying
+            isConnectedNetwork --NO--> logic_end
+            isConnectedNetwork --YES-->isNowPlayingEnable
+            isNowPlayingEnable --NO--> logic_end
+            isNowPlayingEnable --YES--> hasMisskeyAccessToken
+            isSameSong -- NO --> note
+            isSameSong -- YES --> logic_end
+            isSpotifyPlaying --NO--> haslastfmAccessToken
+            isSpotifyPlaying --YES--> isSameSong
+            logic_begin --> isConnectedNetwork
+            note --> saveSong
+            saveSong-->logic_end
+            haslastfmAccessToken --YES--> islastfmPlaying
+            islastfmPlaying --NO--> logic_end
+islastfmPlaying --YES-->isSameSong
+            logic_end --"1分待機" --> logic_begin
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="200" style="cursor: pointer;" onclick="
+                redirectToRandomUrl()">
+        </div>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="./js/generate-toc.js"></script>
+    <script src="./js/generate-url.js"></script>
+    <script src="./js/imgAutoResize.js"></script>
+    <script src="./js/load-footer.js"></script>
+    <script src="./js/load-last-update-date.js"></script>
+    <script src="./js/load-version.js"></script>
+</body>
+
+</html>
