@@ -79,6 +79,91 @@
         <h2>1.8系(2024年10月09日～)</h2>
         <p><span class="hover-text" data-image="images/display-sample-mfm.png"></span>を追加したため、系列を更新しました。</p>
 
+        <details class="details" id="version70">
+            <summary class="summary">1.8.3(バージョンコード70)</summary>
+            <div class="content">
+
+
+                <div class="table-container" data-release-date="20241018" data-install-size="25.2[MB]"></div>
+
+                <hr class="new">
+                <ul>
+                    <li><span class="hover-text"
+                            data-image="images/display-setting.png"></span>に自動変換キーワードを挿入する以下のボタンを追加しました。</li>
+                    <table class="table-design">
+                        <tr>
+                            <td class="title-top-left">ボタン</td>
+                            <td class="title-top-right">挿入テキスト</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="button-like-text"><span class="material-icons"
+                                        style="font-size: 1.2em; vertical-align: middle;">music_note</span></span>
+                            </td>
+                            <td>
+                                <code>【ここに曲名】</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="button-like-text">
+                                    <span class="material-icons"
+                                        style="font-size: 1.2em; vertical-align: middle;">person</span>
+                                </span>
+                            </td>
+                            <td>
+                                <code>【ここにアーティスト名】</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="button-like-text">
+                                    <span class="material-icons"
+                                        style="font-size: 1.2em; vertical-align: middle;">album</span>
+                                </span>
+                            </td>
+                            <td>
+                                <code>【ここにアルバム名】</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="detail-bottom-left">
+                                <span class="button-like-text">
+                                    <span class="material-icons"
+                                        style="font-size: 1.2em; vertical-align: middle;">phone_android</span>
+                                </span>
+                            </td>
+                            <td class="detail-bottom-right">
+                                <code>【ここに機種名】</code>
+                            </td>
+                        </tr>
+                    </table>
+                </ul>
+                <hr class="change">
+                <ul>
+                    <li>前回なうぷれ投稿した曲として、ローカル音源、Spotify、last.fmを別々に記憶するようにしました。</li>
+                    <div class="box-memo">
+                        <p>
+                            以前のバージョンだと、たとえばSpotifyとYouTubeを同時に再生している時に「前回投稿した曲」を上書きしあう状態になってしまい、同じ曲が何度も投稿される現象が発生してしまいます。
+                        </p>
+                    </div>
+                    <li>見せられないよ！に曲が登録されていない場合に表示されるテキストが上下中央揃えになるように変更しました。</li>
+                    <li>各画面で表示される読み込み中のプログレスバーを縦<code>200px</code>,横<code>200px</code>で統一しました。</li>
+                    <li><span class="hover-text" data-image="images/display-drawer.png"></span>の描画パフォーマンスを向上させました。</li>
+                    <li>主要なファイルの命名規則を<code>lowerCamelCase</code>から<code>snake_case</code>に変更しました。</li>
+                    <div class="box-memo">
+                        <p>
+                            この変更による動作への影響はありません。
+                        </p>
+                    </div>
+                </ul>
+                <hr class="fix">
+                <ul>
+                    <li>プレイリスト読込の進行状況を表示するダイアログがライトテーマ・ダークテーマに対応していない不具合を修正しました。</li>
+                </ul>
+            </div>
+        </details>
+
         <details class="details" id="version69">
             <summary class="summary">1.8.2(バージョンコード69)</summary>
             <div class="content">
@@ -92,11 +177,11 @@
                     <table class="table-design">
                         <tr>
                             <td class="invisible"></td>
-                            <td class="title-start">変更前</td>
-                            <td class="title-top-end">変更後</td>
+                            <td class="title-top-left">変更前</td>
+                            <td class="title-top-right">変更後</td>
                         </tr>
                         <tr>
-                            <td class="title-start">曲名</td>
+                            <td class="title-top-left">曲名</td>
                             <td>
                                 <ul>
                                     <li><code>[ここに曲名]</code></li>
@@ -138,13 +223,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="title-end">機種名</td>
+                            <td class="title-bottom-left">機種名</td>
                             <td>
                                 <ul>
                                     <li><code>[ここに機種名]</code></li>
                                 </ul>
                             </td>
-                            <td class="detail-end">
+                            <td class="detail-bottom-right">
                                 <ul>
                                     <li><code>[ここに機種名]</code></li>
                                     <li><code>【ここに機種名】</code></li>
@@ -152,11 +237,11 @@
                             </td>
                         </tr>
                     </table>
-                <div class="box-memo">
-                    <p>
-                        後方互換性を考慮して、<code>[ ]</code>で挟む場合も置換対象のままにしています。
-                    </p>
-                </div>
+                    <div class="box-memo">
+                        <p>
+                            後方互換性を考慮して、<code>[ ]</code>で挟む場合も置換対象のままにしています。
+                        </p>
+                    </div>
                 </ul>
                 <hr class="fix">
             </div>
@@ -198,8 +283,8 @@
                     <table class="table-design">
                         <tbody>
                             <tr>
-                                <td class="title-start">android13以上</td>
-                                <td class="detail-start">
+                                <td class="title-top-left">android13以上</td>
+                                <td class="detail-top-right">
                                     <ul>
                                         <li>音楽とオーディオ</li>
                                         <li>写真と動画</li>
@@ -208,8 +293,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="title-end">android13未満</td>
-                                <td class="detail-end">
+                                <td class="title-bottom-left">android13未満</td>
+                                <td class="detail-bottom-right">
                                     <ul>
                                         <li>ストレージ</li>
                                     </ul>
@@ -226,6 +311,11 @@
                 </ul>
             </div>
         </details>
+
+        <div style="text-align: center;">
+            <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="150" style="cursor: pointer;" onclick="
+                redirectToRandomUrl()">
+        </div>
 
         <h2>1.7系(2024年08月27日～)</h2>
         <p>UIの英語切り替えに対応したため、系列を更新しました。</p>
@@ -259,14 +349,14 @@
                     <table class="table-design">
                         <tbody>
                             <tr>
-                                <td class="title-start">変更前</td>
-                                <td class="detail-start">
+                                <td class="title-top-left">変更前</td>
+                                <td class="detail-top-right">
                                     <span class="button-like-text">新規作成</span>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="title-end">変更後</td>
-                                <td class="detail-end">
+                                <td class="title-bottom-left">変更後</td>
+                                <td class="detail-bottom-right">
                                     <span class="button-like-text">プレイリストの作成・編集</span>
                                 </td>
                             </tr>
@@ -439,16 +529,16 @@
                     <table class="table-design">
                         <tbody>
                             <tr>
-                                <td class="title-start">変更前</td>
-                                <td class="detail-start">
+                                <td class="title-top-left">変更前</td>
+                                <td class="detail-top-right">
                                     <ul>
                                         <li>メタデータの値が<code>null</code></li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="title-end">変更後</td>
-                                <td class="detail-end">
+                                <td class="title-bottom-left">変更後</td>
+                                <td class="detail-bottom-right">
                                     <ul>
                                         <li>メタデータの値が<code>null</code></li>
                                         <li>メタデータの値がスペースのみ</li>
@@ -479,12 +569,12 @@
                         <table class="table-design">
                             <tbody>
                                 <tr>
-                                    <td class="title-start">変更前</td>
-                                    <td class="detail-start"><code>In-App Review API</code>呼び出し</td>
+                                    <td class="title-top-left">変更前</td>
+                                    <td class="detail-top-right"><code>In-App Review API</code>呼び出し</td>
                                 </tr>
                                 <tr>
-                                    <td class="title-end">変更後</td>
-                                    <td class="detail-end"><a
+                                    <td class="title-bottom-left">変更後</td>
+                                    <td class="detail-bottom-right"><a
                                             href="https://play.google.com/store/apps/details?id=com.falhongcha.baconjam">アプリのストアページ</a>へアクセス
                                     </td>
                                 </tr>
@@ -603,10 +693,12 @@
                 <li>ボタン内のアイコンの配置が上下左右中央揃えにならない不具合を修正しました。</li>
             </div>
         </details>
+
         <div style="text-align: center;">
             <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="150" style="cursor: pointer;" onclick="
                 redirectToRandomUrl()">
         </div>
+
         <h2>1.6系(2024年08月07日～)</h2>
         <p>アプリへのレビューを送信する機能を追加したため、系列を更新しました。</p>
         <details class="details" id="version53">
@@ -834,8 +926,8 @@
                     <table class="table-design">
                         <tbody>
                             <tr>
-                                <td class="title-start">テーマ設定</td>
-                                <td class="detail-start"><span class="material-icons"
+                                <td class="title-top-left">テーマ設定</td>
+                                <td class="detail-top-right"><span class="material-icons"
                                         style="font-size: 1.2em; vertical-align: middle;">filter_b_and_w</span></td>
                             </tr>
                             <tr>
@@ -857,8 +949,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="title-end">なうぷれ設定・詳細</td>
-                                <td class="detail-end"><span class="material-icons"
+                                <td class="title-bottom-left">なうぷれ設定・詳細</td>
+                                <td class="detail-bottom-right"><span class="material-icons"
                                         style="font-size: 1.2em; vertical-align: middle;">send</span>
                                 </td>
                             </tr>
@@ -1392,8 +1484,8 @@
                     <table class="table-design">
                         <tbody>
                             <tr>
-                                <td class="title-start">パブリック</td>
-                                <td class="detail-start">すべてのユーザーに公開</td>
+                                <td class="title-top-left">パブリック</td>
+                                <td class="detail-top-right">すべてのユーザーに公開</td>
                             </tr>
                             <tr>
                                 <td class="title">ホーム</td>
@@ -1404,8 +1496,8 @@
                                 <td>自分のフォロワーのみに公開</td>
                             </tr>
                             <tr>
-                                <td class="title-end">チャンネル</td>
-                                <td class="detail-end">特定のチャンネルに公開</td>
+                                <td class="title-bottom-left">チャンネル</td>
+                                <td class="detail-bottom-right">特定のチャンネルに公開</td>
                             </tr>
                         </tbody>
                     </table>

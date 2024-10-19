@@ -71,8 +71,8 @@
             <table class="table-design">
                 <tbody>
                     <tr>
-                        <td class="title-start">misskey風</td>
-                        <td class="detail-start" style="color: #95cf4a; font-weight: bold;">#95CF4A</td>
+                        <td class="title-top-left">misskey風</td>
+                        <td class="detail-top-right" style="color: #95cf4a; font-weight: bold;">#95CF4A</td>
                     </tr>
                     <tr>
                         <td class="title">Bacon</td>
@@ -119,8 +119,8 @@
                         <td style="color: #a3f3d4; font-weight: bold;">#A3F3D4</td>
                     </tr>
                     <tr>
-                        <td class="title-end">フューチャー</td>
-                        <td class="detail-end" style="color: #b6b7b7; font-weight: bold;">#B6B7B7</td>
+                        <td class="title-bottom-left">フューチャー</td>
+                        <td class="detail-bottom-right" style="color: #b6b7b7; font-weight: bold;">#B6B7B7</td>
                     </tr>
                 </tbody>
             </table>
@@ -143,22 +143,22 @@
             <table class="table-design">
                 <tr>
                     <td class="invisible"></td>
-                    <td class="title-start">文字色</td>
-                    <td class="title-top-end">背景色</td>
+                    <td class="title-top-left">文字色</td>
+                    <td class="title-top-right">背景色</td>
                 </tr>
                 <tr>
-                    <td class="title-start">ライトテーマ</td>
-                    <td>#000000</td>
-                    <td>#FFFFFF</td>
+                    <td class="title-top-left">ライトテーマ</td>
+                    <td><code>#000000</code></td>
+                    <td><code>#FFFFFF</code></td>
                 </tr>
                 <tr>
-                    <td class="title-end">ダークテーマ</td>
-                    <td>#FFFFFF</td>
-                    <td class="detail-end">#2F2F2F</td>
+                    <td class="title-bottom-left">ダークテーマ</td>
+                    <td><code>#FFFFFF</code></td>
+                    <td class="detail-bottom-right"><code>#2F2F2F</code></td>
                 </tr>
             </table>
-            <li>ボタン上に表示される文字やアイコンなど、テーマカラーの影響を受けるものについては、<a
-                    href="https://ja.wikipedia.org/wiki/Rec._709">BT.709規格</a>の係数を使用してテーマカラーをグレースケール化した結果、<code>#000000</code>,<code>#FFFFFF</code>のどちらを表示するかを決定しています。
+            <li>ボタン上に表示されるテーマカラーの影響を受けるものについては、<a
+                    href="https://ja.wikipedia.org/wiki/Rec._709">BT.709規格</a>の係数を使用してテーマカラーをグレースケール化した結果をもとに、<code>#000000</code>,<code>#FFFFFF</code>のどちらで表示するかを決定しています。
             </li>
             \begin{align}
             T_R &= テーマカラーの\texttt{R}値 \\
@@ -176,7 +176,7 @@
             \texttt{#000000} & (x \geq \texttt{127})\\
             \texttt{#FFFFFF} & (x < \texttt{127}) \end{cases} \end{align} になります。 </ol>
 
-            <button id="scrollToTopBtn" title="いちばん上に戻る">▲</button>
+                <button id="scrollToTopBtn" title="いちばん上に戻る">▲</button>
 
                 <img id="hover-image" src="" alt="画像" style="display:none;">
                 <div style="text-align: center;">

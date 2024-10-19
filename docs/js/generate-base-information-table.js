@@ -6,7 +6,7 @@ function createTable(releaseDate, installSize) {
     const headerRow = document.createElement('tr');
     const headerCell = document.createElement('td');
     headerCell.colSpan = '2';
-    headerCell.className = 'title-start title-top-end';
+    headerCell.className = 'title-top-left title-top-right';
     headerCell.innerText = 'ℹ️基本情報';
     headerRow.appendChild(headerCell);
     thead.appendChild(headerRow);
@@ -30,10 +30,10 @@ function createTable(releaseDate, installSize) {
 
     const installSizeRow = document.createElement('tr');
     const installSizeTitle = document.createElement('td');
-    installSizeTitle.className = 'title-end';
+    installSizeTitle.className = 'title-bottom-left';
     installSizeTitle.innerText = '📦インストールサイズ';
     const installSizeDetail = document.createElement('td');
-    installSizeDetail.className = 'detail-end';
+    installSizeDetail.className = 'detail-bottom-right';
     installSizeDetail.style.textAlign = 'center';
     const installSizeCode = document.createElement('code');
     installSizeCode.innerText = installSize;
