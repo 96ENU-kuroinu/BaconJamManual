@@ -19,6 +19,14 @@
     <meta name="google-adsense-account" content="ca-pub-2961043635944259">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
         crossorigin="anonymous"></script>
+    <!-- mermaid -->
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'forest'
+        });
+    </script>
 </head>
 
 <body>
@@ -54,10 +62,31 @@
             <li>last.fmというサービス</li>
             <li>last.fmへYouTubeの再生履歴を反映するための「Scrobble」という機能を持つアプリ</li>
         </ol>
-        <div class="screenshots">
-            <a href="./images/lastfm1.png" data-lightbox="misskey-group"><img src="./images/lastfm1.png" alt=""
-                    width="300"></a>
+        <div class="mermaid">
+            sequenceDiagram
+
+            box スマートフォン内
+            participant node1 as YouTube Music
+            participant node2 as Scrobbleアプリ
+            participant node3 as BaconJam
+            end
+            box サーバー
+            participant node4 as last.fm
+            participant node5 as Misskey
+            end
+
+            node1->>node1: 音楽を再生
+            node2->>node1: 再生を検知
+            activate node1
+            node1->>node4: 反映
+            deactivate node1
+            node3->>node4: アクセス
+            activate node4
+            node4->>node3: 再生情報を取得
+            deactivate node4
+            node3->>node5: 投稿
         </div>
+
         <h2>last.fm側の設定</h2>
         <ol>
             <li>アカウントをお持ちでない場合は、<a href="https://www.last.fm/">last.fm</a>にアクセスし、アカウントを作成してください。</li>
