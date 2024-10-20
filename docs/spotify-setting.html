@@ -42,7 +42,7 @@
     </header>
 
     <div class="contentsbody">
-        <h1><img src="./images/Spotify_Full_Logo_RGB_Black.png" alt="Spotify" class="img_h1" id="img_h1">との連携</h1>
+        <h1>Spotifyとの連携</h1>
         <p>処理の概要は<a href="./stream-music-logic.html">こちら</a>のページをご覧ください。</p>
 
         <div id="toc">
@@ -230,16 +230,32 @@
         </ol>
         <h2>Spotify連携時の挙動について</h2>
         <p>約1分に1回、Spotifyで再生中の曲を確認し、Misskeyへの「なうぷれ投稿」を行います。</p>
+        <div class="box-memo">
+            <p>
+                同一のSpotifyアカウントであれば、BaconJamをインストールしていない端末(PCなど)で音楽を再生している場合でも検知します。
+            </p>
+        </div>
+
         <p>以下のいずれかに該当する場合、「なうぷれ投稿」を行いません。</p>
         <ul>
             <li>曲を再生していない</li>
             <li>Misskeyのアクセストークンが設定されていない</li>
+            <ul>
+                <li><a href="./misskey-setting.html">こちら</a>のページを参考にMisskeyのアクセストークンを設定してください。</li>
+            </ul>
             <li>「なうぷれ投稿」が有効になっていない</li>
+            <ul>
+                <li><span class="hover-text" data-image="images/display-setting.png"></span>から変更してください。</li>
+            </ul>
             <li>直前の「なうぷれ投稿」と曲名・アーティスト名が同じ</li>
             <li>スマートフォンがネットワークに接続されていない</li>
             <li>スマートフォンがロック状態になっている</li>
             <li>BaconJamのバッテリー最適化が有効になっている</li>
+            <ul>
+                <li><a href="./guide-battery-optimization.html">こちら</a>のページを参考にBaconJamに対するバッテリー最適化を無効にしてください。</li>
+            </ul>
         </ul>
+        <img id="hover-image" src="" alt="画像" style="display:none;">
 
         <button id="scrollToTopBtn" title="いちばん上に戻る">▲</button>
 
@@ -258,6 +274,8 @@
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
     <script src="./js/to-top.js"></script>
+    <script src="./js/generate-text-by-image.js"></script>
+    <script src="./js/show-image.js"></script>
 </body>
 
 </html>
