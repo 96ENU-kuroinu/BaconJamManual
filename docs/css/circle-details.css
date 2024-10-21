@@ -1,7 +1,7 @@
 .circle-details {
-    width: 50%;
+    width: 75%;
     /* 幅をパーセンテージで指定 */
-    max-width: 350px;
+    max-width: 75%;
     /* 最大幅 */
     min-width: 100px;
     /* 最小幅 */

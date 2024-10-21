@@ -1,6 +1,6 @@
 .circle-a {
-    width: 50%; /* 幅をパーセンテージで指定 */
-    max-width: 350px; /* 最大幅 */
+    width: 75%; /* 幅をパーセンテージで指定 */
+    max-width: 75%; /* 最大幅 */
     min-width: 100px; /* 最小幅 */
     text-align: center;
     margin: 5px;
