@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style-notes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム画面の操作</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer
+        type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- google-adsense -->
+    <meta name="google-adsense-account" content="ca-pub-2961043635944259">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header style="background-color: #95cf4a;padding: 10px;">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="https://96enu-kuroinu.github.io/BaconJamManual/">
+                    <span itemprop="name">🏠TOP</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="./guide-display-main.html">
+                    <span itemprop="name">ホーム画面の操作</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+        <p id="lastUpdated"></p>
+    </header>
+
+    <div class="contentsbody">
+        <h1>ホーム画面の操作</h1>
+        <div class="screenshots">
+            <a href="./images/display-main.png" data-lightbox="misskey-group"><img src="./images/display-main.png"
+                    alt="" width="35%"></a>
+        </div>
+
+        <table class="table-design">
+            <tr>
+                <td class="title-top-left">画面要素</td>
+                <td class="title-top-right">機能</td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">send</span></span>
+                </td>
+                <td>
+                    Spotify、YouTube Musicなどで再生中の曲を強制的になうぷれ投稿します。<br>
+                    <span class="hover-text" data-image="images/display-setting.png"></span>で<span
+                        class="button-like-text">なうぷれ投稿する</span>を無効にしている場合でも投稿するので、特定の曲のみ投稿したい場合に使用してください。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">translate</span></span>
+                </td>
+                <td>
+                    アプリの表示言語を切り替えます。<br>詳細な操作方法は<a href="./guide-languages.html">こちら</a>のページをご覧ください。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">music_note</span>
+                </td>
+                <td>
+                    再生中の音楽ファイルの曲名を表示します。<br>
+                    曲名が画面に収まらない場合はスクロール表示します。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <img src="./images/noImage.png" style="width:150px; border-radius: 10px;" alt="">
+                </td>
+                <td>
+                    再生中の音楽ファイルに埋め込まれているアルバムアートワークを表示します。<br>
+                    埋め込まれていない場合は左の画像を表示します。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">person</span>
+                </td>
+                <td>
+                    再生中の音楽ファイルのアーティスト名を表示します。<br>
+                    アーティスト名が画面に収まらない場合はスクロール表示します。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">album</span>
+                </td>
+                <td>
+                    再生中の音楽ファイルのアルバム名を表示します。<br>
+                    アルバム名が画面に収まらない場合はスクロール表示します。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">queue_music</span></span>
+                </td>
+                <td>
+                    再生するプレイリストを選択します。<br>
+                    プレイリストの作成・編集方法は<a href="./guide-playlists.html">こちら</a>のページをご覧ください。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">restart_alt</span></span>/<span
+                        class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">shuffle</span></span>
+                </td>
+                <td>
+                    プレイリストの再生順序を決定します。
+                    <ul>
+                        <li><span class="button-like-text"><span class="material-icons"
+                                    style="font-size: 1.2em; vertical-align: middle;">restart_alt</span></span>：登録順にループ再生
+                        </li>
+                        <li><span class="button-like-text"><span class="material-icons"
+                                    style="font-size: 1.2em; vertical-align: middle;">shuffle</span></span>：シャッフル再生</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">music_note</span></span>
+                </td>
+                <td>
+                    再生する音楽ファイルを選択します。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text">♭1</span>
+                </td>
+                <td>
+                    再生中の音楽を半音下げます。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text">0</span>
+                </td>
+                <td>
+                    キーの状態を表示します。<br>
+                    押すとデフォルトのキーに戻すことができます。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text">＃1</span>
+                </td>
+                <td>
+                    再生中の音楽を半音上げます。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">skip_previous</span>
+                </td>
+                <td>
+                    1曲前に戻ります。
+                </td>
+            </tr>
+            <tr>
+                <td class="center">
+                    <span class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">play_arrow</span></span>/<span class="button-like-text"><span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">pause</span></span>
+                </td>
+                <td>
+                    曲を再生/停止します。
+                </td>
+            </tr>
+            <tr>
+                <td class="detail-bottom-left center">
+                    <span class="material-icons"
+                            style="font-size: 1.2em; vertical-align: middle;">skip_next</span>
+                </td>
+                <td class="detail-bottom-right">
+                    1曲先に進みます。
+                </td>
+            </tr>
+        </table>
+
+        <img id="hover-image" src="" alt="画像" style="display:none;">
+    </div>
+    <div style="text-align: center;">
+        <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
+                redirectToRandomUrl()">
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <script src="./js/generate-text-by-image.js"></script>
+    <script src="./js/generate-toc.js"></script>
+    <script src="./js/generate-url.js"></script>
+    <script src="./js/imgAutoResize.js"></script>
+    <script src="./js/load-footer.js"></script>
+    <script src="./js/load-last-update-date.js"></script>
+    <script src="./js/load-version.js"></script>
+    <script src="./js/show-image.js"></script>
+</body>
+
+</html>

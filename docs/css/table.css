@@ -12,6 +12,11 @@
     border: solid 1px #95cf4a;
 }
 
+.table-design td.center {
+    text-align: center;
+}
+
+
 .table-design td.invisible {
     border: none;
 }
