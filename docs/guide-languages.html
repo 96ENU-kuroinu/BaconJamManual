@@ -47,8 +47,10 @@
         <h1>言語選択/Languages</h1>
 
         <ol>
-            <li>ホーム画面の<span class="button-like-text"><span class="material-icons"
-                        style="font-size: 1.2em; vertical-align: middle;">translate</span></span>を押下して言語選択ダイアログを表示してください。</li>
+            <li><span class="hover-text" data-image="images/display-main.png"></span>の<span
+                    class="button-like-text"><span class="material-icons"
+                        style="font-size: 1.2em; vertical-align: middle;">translate</span></span>を押下して言語選択ダイアログを表示してください。
+            </li>
             <div class="screenshots">
                 <a href="./images/languages1.png" data-lightbox="misskey-group"><img src="./images/languages1.png"
                         alt="" width="35%"></a>
@@ -59,6 +61,9 @@
                         alt="" width="35%"></a>
             </div>
         </ol>
+
+        <img id="hover-image" src="" alt="画像" style="display:none;">
+
         <div style="text-align: center;">
             <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
                 redirectToRandomUrl()">
@@ -67,12 +72,14 @@
     <footer>
         <div id="footer"></div>
     </footer>
+    <script src="./js/generate-text-by-image.js"></script>
     <script src="./js/generate-toc.js"></script>
     <script src="./js/generate-url.js"></script>
     <script src="./js/imgAutoResize.js"></script>
     <script src="./js/load-footer.js"></script>
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
+    <script src="./js/show-image.js"></script>
 </body>
 
 </html>
