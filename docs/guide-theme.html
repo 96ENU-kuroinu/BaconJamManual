@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- google-adsense -->
     <meta name="google-adsense-account" content="ca-pub-2961043635944259">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
@@ -46,8 +48,9 @@
     <div class="contentsbody">
         <h1>テーマの設定</h1>
 
-        <span class="hover-text" data-image="images/display-setting.png"></span>の<span
-            class="button-like-text">テーマ設定</span>を押下して、テーマ設定を展開してください。
+        <span class="hover-text" data-image="images/display-setting.png"></span>の<span class="button-like-text"><span
+                class="material-icons"
+                style="font-size: 1.2em; vertical-align: middle;">filter_b_and_w</span>テーマ設定</span>を押下して、テーマ設定を展開してください。
 
         <div class="screenshots">
             <a href="./images/theme1.png" data-lightbox="misskey-group"><img src="./images/theme1.png" alt=""
@@ -67,60 +70,82 @@
             <div class="screenshots">
                 <a href="./images/theme3.png" data-lightbox="misskey-group"><img src="./images/theme3.png" alt=""
                         width="35%"></a>
+                <a href="./images/theme6.png" data-lightbox="misskey-group"><img src="./images/theme6.png" alt=""
+                        width="35%"></a>
+                <p>テーマ：Baconを選んだ場合 <code id="version"></code></p>
             </div>
             <table class="table-design">
                 <tbody>
                     <tr>
-                        <td class="title-top-left">misskey風</td>
-                        <td class="detail-top-right" style="color: #95cf4a; font-weight: bold;">#95CF4A</td>
+                        <td class="title-top-left">テーマカラー名</td>
+                        <td class="title" style="font-weight: bold;">カラーコード</td>
+                        <td class="title-top-right" style="font-weight: bold;">RGB</td>
+                    </tr>
+                    <tr>
+                        <td class="title">misskey風</td>
+                        <td style="text-align: center; color: #95cf4a; font-weight: bold;">#95CF4A</td>
+                        <td style="text-align: center; color: #95cf4a; font-weight: bold;">(149,207, 74)</td>
                     </tr>
                     <tr>
                         <td class="title">Bacon</td>
-                        <td style="color: #fb6e96;font-weight: bold;">#FB6E96</td>
+                        <td style="text-align: center; color: #fb6e96;font-weight: bold;">#FB6E96</td>
+                        <td style="text-align: center; color: #fb6e96;font-weight: bold;">(251,110,150)</td>
                     </tr>
                     <tr>
                         <td class="title">透き通るような1</td>
-                        <td style="color: #128afa; font-weight: bold;">#128AFA</td>
+                        <td style="text-align: center; color: #128afa; font-weight: bold;">#128AFA</td>
+                        <td style="text-align: center; color: #128afa; font-weight: bold;">( 18,138,250)</td>
                     </tr>
                     <tr>
                         <td class="title">透き通るような2</td>
-                        <td style="color: #00d7fb; font-weight: bold;">#00D7FB</td>
+                        <td style="text-align: center; color: #00d7fb; font-weight: bold;">#00D7FB</td>
+                        <td style="text-align: center; color: #00d7fb; font-weight: bold;">( 0,215,251)</td>
                     </tr>
                     <tr>
                         <td class="title">ダージリン1stフラッシュ</td>
-                        <td style="color: #fcd86c; font-weight: bold;">#FCD86C</td>
+                        <td style="text-align: center; color: #fcd86c; font-weight: bold;">#FCD86C</td>
+                        <td style="text-align: center; color: #fcd86c; font-weight: bold;">(252,216,108)</td>
                     </tr>
                     <tr>
                         <td class="title">ダージリン2ndフラッシュ</td>
-                        <td style="color: #bf7331; font-weight: bold;">#BF7331</td>
+                        <td style="text-align: center; color: #bf7331; font-weight: bold;">#BF7331</td>
+                        <td style="text-align: center; color: #bf7331; font-weight: bold;">(191,115, 49)</td>
                     </tr>
                     <tr>
                         <td class="title">ウヴァ</td>
-                        <td style="color: #6b2d14; font-weight: bold;">#6B2D14</td>
+                        <td style="text-align: center; color: #6b2d14; font-weight: bold;">#6B2D14</td>
+                        <td style="text-align: center; color: #6b2d14; font-weight: bold;">(107, 45, 20)</td>
                     </tr>
                     <tr>
                         <td class="title">キームン</td>
-                        <td style="color: #913f32; font-weight: bold;">#913F32</td>
+                        <td style="text-align: center; color: #913f32; font-weight: bold;">#913F32</td>
+                        <td style="text-align: center; color: #913f32; font-weight: bold;">(145, 63, 50)</td>
                     </tr>
                     <tr>
                         <td class="title">ニルギリ</td>
-                        <td style="color: #e7a44c; font-weight: bold;">#E7A44C</td>
+                        <td style="text-align: center; color: #e7a44c; font-weight: bold;">#E7A44C</td>
+                        <td style="text-align: center; color: #e7a44c; font-weight: bold;">(231,164, 76)</td>
                     </tr>
                     <tr>
                         <td class="title">セイロン</td>
-                        <td style="color: #9d4421; font-weight: bold;">#9D4421</td>
+                        <td style="text-align: center; color: #9d4421; font-weight: bold;">#9D4421</td>
+                        <td style="text-align: center; color: #9d4421; font-weight: bold;">(157, 68, 33)</td>
                     </tr>
                     <tr>
                         <td class="title">手鍋式ミルクティー</td>
-                        <td style="color: #ffe6c9; font-weight: bold;">#FFE6C9</td>
+                        <td style="text-align: center; color: #ffe6c9; font-weight: bold;">#FFE6C9</td>
+                        <td style="text-align: center; color: #ffe6c9; font-weight: bold;">(255,230,201)</td>
                     </tr>
                     <tr>
                         <td class="title">歯磨き粉</td>
-                        <td style="color: #a3f3d4; font-weight: bold;">#A3F3D4</td>
+                        <td style="text-align: center; color: #a3f3d4; font-weight: bold;">#A3F3D4</td>
+                        <td style="text-align: center; color: #a3f3d4; font-weight: bold;">(163,243,212)</td>
                     </tr>
                     <tr>
                         <td class="title-bottom-left">フューチャー</td>
-                        <td class="detail-bottom-right" style="color: #b6b7b7; font-weight: bold;">#B6B7B7</td>
+                        <td style="text-align: center; color: #b6b7b7; font-weight: bold;">#B6B7B7</td>
+                        <td class="detail-bottom-right" style="text-align: center; color: #b6b7b7; font-weight: bold;">
+                            (182,183,183)</td>
                     </tr>
                 </tbody>
             </table>
@@ -179,6 +204,7 @@
                 <button id="scrollToTopBtn" title="いちばん上に戻る">▲</button>
 
                 <img id="hover-image" src="" alt="画像" style="display:none;">
+
                 <div style="text-align: center;">
                     <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
                 redirectToRandomUrl()">

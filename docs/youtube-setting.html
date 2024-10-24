@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- Google font Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- google-adsense -->
     <meta name="google-adsense-account" content="ca-pub-2961043635944259">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2961043635944259"
@@ -174,7 +176,22 @@
             <li>アプリの設定を開き、「Scrobbleの遅延」の「分」を最小の30秒に設定したら、Pano Scrobblerの設定は完了です。</li>
         </ol>
 
+        <h2>BaconJam側の設定</h2>
+        <ol>
+            <li><span class="hover-text" data-image="images/display-setting.png"></span>の<span
+                    class="button-like-text"><span class="material-icons" style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>YouTube接続設定</span>を押下して、設定項目を展開してください。</li>
+            <div class="screenshots">
+                <a href="./images/lastfm11.png" data-lightbox="misskey-group"><img src="./images/lastfm11.png" alt=""
+                        width="35%"></a>
+                <a href="./images/lastfm12.png" data-lightbox="misskey-group"><img src="./images/lastfm12.png" alt=""
+                        width="35%"></a>
+            </div>
+            <li>last.fmのユーザー名と、先ほど控えた<code>API key</code>を入力してください。</li>
+        </ol>
+
         <button id="scrollToTopBtn" title="いちばん上に戻る">▲</button>
+
+        <img id="hover-image" src="" alt="画像" style="display:none;">
 
         <div style="text-align: center;">
             <img src="./images/Amazon-logo-RGB.png" alt="固定画像" width="15%" style="cursor: pointer;" onclick="
@@ -184,12 +201,14 @@
     <footer>
         <div id="footer"></div>
     </footer>
+    <script src="./js/generate-text-by-image.js"></script>
     <script src="./js/generate-toc.js"></script>
     <script src="./js/generate-url.js"></script>
     <script src="./js/imgAutoResize.js"></script>
     <script src="./js/load-footer.js"></script>
     <script src="./js/load-last-update-date.js"></script>
     <script src="./js/load-version.js"></script>
+    <script src="./js/show-image.js"></script>
     <script src="./js/to-top.js"></script>
 </body>
 
