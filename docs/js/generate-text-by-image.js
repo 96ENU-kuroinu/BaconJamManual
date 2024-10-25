@@ -26,7 +26,7 @@ function updateSpanText() {
             case 'images/display-playlists-1.png':
                 newText = 'プレイリスト一覧画面';
                 break;
-            case 'images/display-main.png':
+            case 'images/display-main_framed.png':
                 newText = 'ホーム画面';
                 break;
             case 'images/display-drawer.png':
