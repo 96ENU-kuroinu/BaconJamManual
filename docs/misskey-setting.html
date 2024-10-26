@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style-notes.css">
+    <link rel="stylesheet" href="./css/details.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misskeyとの連携</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
@@ -63,47 +64,81 @@
         <ol>
             <li><span class="hover-text" data-image="images/display-setting.png"></span>の<span
                     class="button-like-text"><span class="material-icons"
-                        style="font-size: 1.2em; vertical-align: middle;">filter_b_and_w</span>Misskey接続設定</span>を押下して、設定項目を展開してください。
+                        style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>Misskey接続設定</span>を押下して、設定項目を展開してください。
             </li>
             <div class="screenshots">
-                <a href="./images/misskey1.png" data-lightbox="misskey-group"><img src="./images/misskey1.png" alt=""
+                <a href="./images/misskey1_framed.png" data-lightbox="misskey-group"><img src="./images/misskey1_framed.png" alt=""
                         width="35%"></a>
-                <a href="./images/misskey2.png" data-lightbox="misskey-group"><img src="./images/misskey2.png" alt=""
+                <a href="./images/misskey2_framed.png" data-lightbox="misskey-group"><img src="./images/misskey2_framed.png" alt=""
                         width="35%"></a>
                 <p>Misskey接続設定<code id="version"></code></p>
             </div>
+
+            <details class="details">
+                <summary class="summary">接続先サーバーの変更</summary>
+                <div class="content">
+                    <p><span class="button-like-text"><span class="material-icons"
+                                style="font-size: 1.2em; vertical-align: middle;">private_connectivity</span>Misskey接続設定</span>の<span
+                            class="button-like-text">サーバー選択</span>を押下してください。</p>
+                    <div class="box-memo">
+                        <p>
+                            接続先を変更した場合は認証作業を再度行ってください。
+                        </p>
+                    </div>
+                    <h3><a href="https://misskey-hub.net/ja/servers/">Misskey
+                            Hubのサーバー一覧</a>に掲載されているサーバーへ接続する場合</h3>
+                    <ol>
+                        <li>サーバー名またはドメイン名で接続したいサーバーを検索してください。</li>
+                        <div class="screenshots">
+                            <a href="./images/misskey11_framed.png" data-lightbox="server-group"><img
+                                    src="./images/misskey11_framed.png" alt="" width="35%"></a>
+                        </div>
+                        <li>サーバーを押下することで、接続先が変更されます。</li>
+                    </ol>
+                    <h3>掲載されていないサーバーへ接続する場合</h3>
+                    <ol>
+                        <li><span class="button-like-text">一覧にないサーバーへ接続する</span>を押下してください。</li>
+                        <li>表示されるダイアログに接続先のサーバーのドメイン名を入力して<span class="button-like-text">OK</span>を押下してください。</li>
+                        <div class="screenshots">
+                            <a href="./images/misskey12_framed.png" data-lightbox="server-group"><img
+                                    src="./images/misskey12_framed.png" alt="" width="35%"></a>
+                        </div>
+                    </ol>
+                </div>
+            </details>
+
             <li><span class="button-like-text">認証する</span>を押下して、アプリへのアクセス許可ページにアクセスしてください。</li>
             <li>「なうぷれ投稿」したいMisskeyアカウントのユーザー名、パスワードを入力してログインを押下してください。</li>
             <div class="screenshots">
-                <a href="./images/misskey3_framed.png" data-lightbox="misskey-group"><img src="./images/misskey3_framed.png" alt=""
-                        width="35%"></a>
+                <a href="./images/misskey3_framed.png" data-lightbox="misskey-group"><img
+                        src="./images/misskey3_framed.png" alt="" width="35%"></a>
             </div>
             <li>以下の図のように二要素認証の入力を要求された場合は、こちらの手順で作成した認証コードを入力してログインを押下してください。</li>
             <div class="screenshots">
-                <a href="./images/misskey4_framed.png" data-lightbox="misskey-group"><img src="./images/misskey4_framed.png" alt=""
-                        width="35%"></a>
+                <a href="./images/misskey4_framed.png" data-lightbox="misskey-group"><img
+                        src="./images/misskey4_framed.png" alt="" width="35%"></a>
             </div>
             <li>以下の図のようなアクセス許可ページが表示されるので、<span class="button-like-text">許可</span>を押下してください。</li>
             <div class="screenshots">
-                <a href="./images/misskey5_framed.png" data-lightbox="misskey-group"><img src="./images/misskey5_framed.png" alt=""
-                        width="35%"></a>
+                <a href="./images/misskey5_framed.png" data-lightbox="misskey-group"><img
+                        src="./images/misskey5_framed.png" alt="" width="35%"></a>
             </div>
             <li>以下の図のような認証完了ページが表示されたら、BaconJamに戻ってください。</li>
             <div class="screenshots">
-                <a href="./images/misskey6_framed.png" data-lightbox="misskey-group"><img src="./images/misskey6_framed.png" alt=""
-                        width="35%"></a>
+                <a href="./images/misskey6_framed.png" data-lightbox="misskey-group"><img
+                        src="./images/misskey6_framed.png" alt="" width="35%"></a>
             </div>
             <li>連携に成功している場合以下の図のようなダイアログが表示されます。</li>
+            <div class="screenshots">
+                <a href="./images/misskey7_framed.png" data-lightbox="misskey-group"><img src="./images/misskey7_framed.png" alt=""
+                        width="35%"></a>
+            </div>
             <div class="box-caution">
                 <p>
                     <span class="button-like-text">許可</span>を押下する前にBaconJamに戻ったり、<span
                         class="button-like-text">キャンセル</span>を押下すると認証に失敗します。その場合は、再度<span
                         class="button-like-text">認証する</span>を押下するところから行ってください。
                 </p>
-            </div>
-            <div class="screenshots">
-                <a href="./images/misskey7.png" data-lightbox="misskey-group"><img src="./images/misskey7.png" alt=""
-                        width="35%"></a>
             </div>
         </ol>
         <h2>発行したアクセストークンの確認・削除</h2>
