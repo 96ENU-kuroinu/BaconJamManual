@@ -1,5 +1,6 @@
 // 遷移先のURLを配列で定義
 const redirectUrls = [
+    "https://amzn.to/3AofBob",
     "https://amzn.to/3AZFcnw",
     "https://amzn.to/3B2Dly9",
     "https://amzn.to/3B3xVmL",
@@ -12,6 +13,7 @@ const redirectUrls = [
     "https://amzn.to/3TRdpfN",
     "https://amzn.to/3TsdsOB",
     "https://amzn.to/3U32u2B",
+    "https://amzn.to/3UNV1VB",
     "https://amzn.to/3XFKFbZ",
     "https://amzn.to/3XGbuwF",
     "https://amzn.to/3XHnUV0",
@@ -49,6 +51,7 @@ const redirectUrls = [
     "https://amzn.to/4ek7ozV",
     "https://amzn.to/4elHOKC",
     "https://amzn.to/4enSGYO",
+    "https://amzn.to/4fh0zQ3",
     "https://amzn.to/4gpfclx",
     "https://amzn.to/4gqijcZ",
     "https://amzn.to/4gqYjXZ",
