@@ -43,228 +43,24 @@
 
     <div class="contentsbody">
         <h1>Spotifyとの連携</h1>
-        <p>処理の概要は<a href="./stream-music-logic.html">こちら</a>のページをご覧ください。</p>
-
-        <div id="toc">
-            <ul id="toc-list"></ul>
-        </div>
-
-        <h2>Spotify側の設定</h2>
-        <h3>Spotify for Developersの認証</h3>
-        <div class="box-check">
+        <div class="box-caution">
             <p>
-                過去に認証を行ったことがない場合のみ、この手順を行ってください。
+                Spotify for Developersを使用した<a href="spotify-setting-old.html">専用の連携処理</a>は<code>1.11.0</code>で廃止しました。
             </p>
         </div>
-        <ol>
-            <li><a href="https://developer.spotify.com/">Spotify for Developers</a>にアクセスし、ご利用のSpotifyアカウントでログインしてください。
-            </li>
-            <li>アカウント名を押下してメニューを表示し、<span class="button-like-text">Dashboard</span>を押下して<a
-                    href="https://developer.spotify.com/dashboard">Dashboard</a>へ移動してください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify1.png" data-lightbox="misskey-group"><img src="./images/spotify1.png" alt=""
-                    width="35%"></a>
-        </div>
-        <ol start="3">
-            <li>
-                Dashboardの
-                <blockquote>
-                    <p>
-                        You need to verify your email address (アカウントに登録されているメール
-                        アドレス) before you can create an app</p>
-                </blockquote>
-                と表示されている部分の<span class="button-like-text">Update email address</span>を押下してください。
-            </li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify2.png" data-lightbox="misskey-group"><img src="./images/spotify2.png" alt=""
-                    width="90%"></a>
-        </div>
-        <ol start="4">
-            <li>押下後、アカウントに登録されているメールアドレスに<code>no-reply@spotify.com</code>から以下の図のようなセキュリティ確認のメールが送信されるので、<span
-                    class="button-like-text">メールアドレスを確認する</span>を押下してください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify3.png" data-lightbox="misskey-group"><img src="./images/spotify3.png" alt=""
-                    width="35%"></a>
-        </div>
-        <ol start="5">
-            <li>ブラウザ上で以下の図のようなページが表示されたら、<a href="https://developer.spotify.com/dashboard">Dashboard</a>に戻ってください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify4.png" data-lightbox="misskey-group"><img src="./images/spotify4.png" alt=""
-                    width="35%"></a>
-        </div>
-        <ol start="6">
-            <li>Dashboardで、認証前は押下できなかった<span class="button-like-text">Create app</span>が押下できるようになっていれば、認証完了です。</li>
-        </ol>
-        <h3>SpotifyとBaconJam接続用appの作成</h3>
-        <ol>
-            <li><a href="https://developer.spotify.com/dashboard">Dashboard</a>の<span class="button-like-text">Create
-                    app</span>を押下してください。
-            </li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify5.png" data-lightbox="misskey-group"><img src="./images/spotify5.png" alt=""
-                    width="90%"></a>
-        </div>
-        <ol start="2">
-            <li>app作成ページが表示されるので、以下を参考に値を設定してください。
-            </li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify6.png" data-lightbox="misskey-group"><img src="./images/spotify6.png" alt=""
-                    width="90%"></a>
-        </div>
-        <table class="table-design">
-            <tr>
-                <td class="title-top-left">App name</td>
-                <td class="detail-top-right">何らかの値を設定してください。</td>
-            </tr>
-            <tr>
-                <td class="title">App description</td>
-                <td>何らかの値を設定してください。</td>
-            </tr>
-            <tr>
-                <td class="title">Website</td>
-                <td>空欄で構いません。</td>
-            </tr>
-            <tr>
-                <td class="title">Redirect URIs</td>
-                <td>必ず<code>http://localhost</code>という値を設定してください。</td>
-            </tr>
-            <tr>
-                <td class="title">Bundle IDs</td>
-                <td>空欄で構いません。</td>
-            </tr>
-            <tr>
-                <td class="title">Android packages</td>
-                <td>空欄で構いません。</td>
-            </tr>
-            <tr>
-                <td class="title-bottom-left">APIs used</td>
-                <td class="detail-bottom-right">以下に✅を入れてください。
-                    <ul>
-                        <li>Android</li>
-                        <li>Web API</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <ol start="3">
-            <li>
-                <blockquote>
-                    <p>I understand and agree with Spotify's Developer Terms of Service and Design Guidelines
-                    </p>
-                </blockquote>
-                に✅を入れ、<span class="button-like-text">save</span>を押下してください。
-            </li>
-            <li>以下の図のようなapp Homeページが表示されたら、appの作成は完了です。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify7.png" data-lightbox="misskey-group"><img src="./images/spotify7.png" alt=""
-                    width="90%"></a>
-        </div>
-        <a id="getinfo"></a>
-        <h3>接続に必要な情報の取得</h3>
-        <ol>
-            <li>作成したappのHomeページにアクセスしてください。</li>
-            <li><span class="button-like-text">Settings</span>を押下してBasic Informationページに移動してください。</li>
-            <li>ページ上部の<code>ClientID</code>が表示されている枠の<span class="button-like-text">View client
-                    secret</span>を押下して、<code>ClientSecret</code>を表示してください。</li>
-            <div class="screenshots">
-                <a href="./images/spotify8.png" data-lightbox="misskey-group"><img src="./images/spotify8.png" alt=""
-                        width="90%"></a>
-                <p><code>ClientSecret</code>表示前</p>
-                <a href="./images/spotify9.png" data-lightbox="misskey-group"><img src="./images/spotify9.png" alt=""
-                        width="90%"></a>
-                <p><code>ClientSecret</code>表示後</p>
-            </div>
 
-            <li>以下の項目を控えてください。
-                <ul>
-                    <li><code>ClientID</code></li>
-                    <li><code>ClientSecret</code></li>
-                </ul>
-            </li>
-            <div class="box-caution">
-                <p>
-                    控えた値は他人に知られないように管理してください。アカウントへの不正アクセス・乗っ取り等が発生する危険があります。
-                </p>
-            </div>
-        </ol>
-        <h2>BaconJam側の設定</h2>
-        <ol>
-            <li><span class="hover-text" data-image="images/display-setting.png"></span>の<span class="button-like-text">Spotify接続設定</span>を押下して、設定項目を展開してください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify10_framed.png" data-lightbox="misskey-group"><img src="./images/spotify10_framed.png" alt=""
-                    width="35%"></a>
-            <a href="./images/spotify11_framed.png" data-lightbox="misskey-group"><img src="./images/spotify11_framed.png" alt=""
-                    width="35%"></a>
-            <p>Spotify接続設定<code id="version"></code></p>
-        </div>
-        <ol start="2">
-            <li><a href="#getinfo">接続に必要な情報の取得</a>で控えた<code>ClientID</code>,<code>ClientSecret</code>を<span
-                    class="button-like-text">Spotify接続設定</span>に入力してください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify12_framed.png" data-lightbox="misskey-group"><img src="./images/spotify12_framed.png" alt=""
-                    width="35%"></a>
-        </div>
-        <ol start="3">
-            <li><span class="button-like-text">Spotify接続設定</span>の<span
-                    class="button-like-text">認証する</span>が押下できるようになるので、押下して認証ページへアクセスしてください。</li>
-            <li>以下の図のような認証ページが表示されるので、<span class="button-like-text">同意する</span>を押下してください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify13_framed.png" data-lightbox="misskey-group"><img src="./images/spotify13_framed.png" alt=""
-                    width="35%"></a>
-        </div>
-        <ol start="5">
-            <li>以下の図のような接続エラーページに切り替わるので、このページのURLを控えてください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify14_framed.png" data-lightbox="misskey-group"><img src="./images/spotify14_framed.png" alt=""
-                    width="35%"></a>
-        </div>
-        <ol start="6">
-            <li><span class="button-like-text">Spotify接続設定</span>の<span
-                    class="button-like-text">してきたよ</span>ボタンを押下してダイアログを表示し、控えたURLをペーストして<span
-                    class="button-like-text">OK</span>ボタンを押下してください。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify15_framed.png" data-lightbox="misskey-group"><img src="./images/spotify15_framed.png" alt=""
-                    width="35%"></a>
-        </div>
-        <ol start="7">
-            <li>URL入力ダイアログが閉じ、以下の図のような成功ダイアログが表示されたらBaconJam側の準備は完了です。</li>
-        </ol>
-        <div class="screenshots">
-            <a href="./images/spotify16_framed.png" data-lightbox="misskey-group"><img src="./images/spotify16_framed.png" alt=""
-                    width="35%"></a>
-        </div>
-        <div class="box-check">
-            <p>
-                ダイアログ内のユーザー名がご自身のアカウントと一致していることを確認してください。
-            </p>
-        </div>
-        </ol>
+        <h2>連携手順</h2>
+        <p><a href="youtube-setting.html">こちら</a>のページを参考に、last.fmを使用した連携を行ってください。</p>
+
+
         <h2>Spotify連携時の挙動について</h2>
         <p>約1分に1回、Spotifyで再生中の曲を確認し、Misskeyへの「なうぷれ投稿」を行います。</p>
-        <div class="box-memo">
-            <p>
-                同一のSpotifyアカウントであれば、BaconJamをインストールしていない端末(PCなど)で音楽を再生している場合でも検知します。
-            </p>
-        </div>
-
         <p>以下のいずれかに該当する場合、「なうぷれ投稿」を行いません。</p>
         <ul>
             <li>曲を再生していない</li>
             <li>Misskeyのアクセストークンが設定されていない</li>
             <ul>
-                <li><a href="./misskey-setting.html">こちら</a>のページを参考にMisskeyのアクセストークンを設定してください。</li>
+                <li><a href="./misskey-setting.html">こちら</a>のページを参考に、Misskeyのアクセストークンを設定してください。</li>
             </ul>
             <li>「なうぷれ投稿」が有効になっていない</li>
             <ul>
@@ -275,7 +71,7 @@
             <li>スマートフォンがロック状態になっている</li>
             <li>BaconJamのバッテリー最適化が有効になっている</li>
             <ul>
-                <li><a href="./guide-battery-optimization.html">こちら</a>のページを参考にBaconJamに対するバッテリー最適化を無効にしてください。</li>
+                <li><a href="./guide-battery-optimization.html">こちら</a>のページを参考に、BaconJamに対するバッテリー最適化を無効にしてください。</li>
             </ul>
         </ul>
         <img id="hover-image" src="" alt="画像" style="display:none;">
